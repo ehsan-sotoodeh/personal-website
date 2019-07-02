@@ -509,7 +509,7 @@ img.svg{
 	clear: both;
 	float: left;
 	text-align: left;
-	padding-bottom: 100px;
+	padding-bottom: 60px;
 	position: relative;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -692,8 +692,6 @@ img.svg{
 }
 .arlo_tm_about_wrap .leftbox .about_image_wrap img{opacity: 0;}
 .arlo_tm_about_wrap .rightbox{
-	width: 65%;
-	float: right;
 	padding: 0px 0px 0px 65px;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -711,16 +709,19 @@ img.svg{
 	font-size: 15px;
 	font-weight: 600;
 }
-.arlo_tm_about_wrap .definition{margin-bottom: 15px;}
+.arlo_tm_about_wrap .definition{margin-bottom: 15px;font-size: 1rem;}
 .arlo_tm_about_wrap .definition p{color: #333;}
-.arlo_tm_about_wrap .definition p strong{color: #E3872D;}
+.arlo_tm_about_wrap .definition p strong{color: #041230;}
 
 .arlo_tm_about_wrap .about_short_contact_wrap{
+
 	width: 100%;
 	height: auto;
 	clear: both;
 	float: left;
-	margin-bottom: 13px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 1rem;
 	
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
@@ -1990,7 +1991,7 @@ img.svg{
 .arlo_tm_universal_box_wrap.particle{
 	height: 100vh;
 	position: relative;
-	background-image: url(..//images/hero/2.jpg);
+	background-image: url(../images/bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
@@ -2001,7 +2002,7 @@ img.svg{
 	bottom: 0px;
 	left: 0px;
 	right: 0px;
-	background-color:rgba(7,23,55,.8);
+	background-color:rgba(7,23,55,.4);
 }
 
 /*---------------------------------------------------*/
