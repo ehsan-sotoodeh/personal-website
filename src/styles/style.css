@@ -2394,14 +2394,14 @@ img.svg{
     color: #d73814;
 }
 
-.media {
+.myProjectsComponent .media {
     display: flex;
     align-items: flex-start;
     border: 1px solid #ccc;
     background: #fff;
 
 }
-.media .media-figure {
+.myProjectsComponent .media .media-figure {
 	margin-right: 1em;
 	max-height: 150px;
 	max-width: 150px;
@@ -2409,28 +2409,28 @@ img.svg{
 
 }
 
-.media .media-figure img {
+.myProjectsComponent .media .media-figure img {
 	width: 100%;
 }
-/* .media .media-body {
+.myProjectsComponent  .media .media-body {
 	flex: 1;
 	padding: 1em;
-} */
-.media .media-body .media-title{
+}
+.myProjectsComponent .media .media-body .media-title{
 	font-size: 1.2rem
 	
 }
-.media .media-body p{
+.myProjectsComponent .media .media-body p{
 	margin-top:10px;
 	line-height: 1.2;
 	letter-spacing: 1px;
 	
 }
-.media .alignCenter {
+.myProjectsComponent  .media .alignCenter {
 	align-items: center;  
 }
 
-.arlo_tm_services_wrap hr{
+.myProjectsComponent  hr{
 	margin-bottom: 5px;
 	margin-top:5px;
 }
@@ -2494,4 +2494,20 @@ img.svg{
 .testimonialsComponent .media{
  
     border: none;    
+}
+
+
+.MyEducationComponent .educationIcon{
+	font-size:4rem;
+	margin: 1rem;
+	color:#041230;
+
+}
+.MyEducationComponent .media-title{
+	font-size:1.2rem;
+	margin:0.5rem;
+	color:#041230;
+}
+.MyEducationComponent .media-figure{
+	width: 125px;
 }

@@ -4,7 +4,7 @@ import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
 
 export default function MyProjectsComponent(){
     return(
-              <div class="arlo_tm_section" id="services">
+              <div class="myProjectsComponent arlo_tm_section" id="services">
                       <div class="arlo_tm_services_wrap">
                           <div class="container">
                               <div class="arlo_tm_title_holder">

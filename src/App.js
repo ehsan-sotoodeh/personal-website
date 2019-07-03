@@ -12,6 +12,7 @@ import MyProjectsComponent from './components/MyProjectsComponent'
 import SkillsPageComponent from './components/SkillsPageComponent'
 import ContactPageComponent from './components/ContactPageComponent'
 import LeftSidebarComponent from './components/LeftSidebarComponent'
+import MyEducationComponent from './components/MyEducationComponent'
 import PortfolioPageComponent from './components/PortfolioPageComponent'
 import CounterboxPageComponent from './components/CounterboxPageComponent'
 import TestimonialsPageComponent from './components/TestimonialsPageComponent'
@@ -35,7 +36,9 @@ class App extends Component {
             <AboutPageComponent />
             <MyProjectsComponent />
             <TestimonialsPageComponent />
-
+            <MyEducationComponent />
+            <NewsPageComponent />
+            <FooterComponent />
 
             
     {        //<SkillsPageComponent />
@@ -46,8 +49,7 @@ class App extends Component {
 {           // <CounterboxPageComponent />
 }            
 
-            <NewsPageComponent />
-            <FooterComponent />
+
           
         
           
