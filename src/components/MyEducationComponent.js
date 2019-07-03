@@ -6,11 +6,11 @@ import { faAward,faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
 export default function MyEducationComponent(){
     return(
-              <div class="MyEducationComponent arlo_tm_section" id="services">
+              <div class="MyEducationComponent arlo_tm_section" id="education">
                       <div class="arlo_tm_services_wrap">
                           <div class="container">
                               <div class="arlo_tm_title_holder">
-                                  <h3>My Education</h3>
+                                  <h3>Education</h3>
                                   <span></span>
                               </div>
 

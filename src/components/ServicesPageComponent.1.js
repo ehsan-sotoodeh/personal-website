@@ -3,7 +3,7 @@ import React, { Component }  from 'react';
 
 export default function ServicesPageComponent(){
     return(
-              <div class="arlo_tm_section" id="services">
+              <div class="arlo_tm_section" id="projects">
                       <div class="arlo_tm_services_wrap">
                           <div class="container">
                               <div class="arlo_tm_title_holder">

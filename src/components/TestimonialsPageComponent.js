@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 export default function TestimonialsPageComponent2(){
     return(
-              <div class="arlo_tm_section" id="services">
+              <div class="arlo_tm_section" id="testimonials">
                       <div class="arlo_tm_services_wrap">
                           <div class="container testimonialsComponent">
                               <div class="arlo_tm_title_holder">
