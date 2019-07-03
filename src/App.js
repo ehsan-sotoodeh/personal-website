@@ -33,13 +33,16 @@ class App extends Component {
           <div class="rightpart_inner">
             <HomePageComponent />
             <AboutPageComponent />
+            <MyProjectsComponent />
+            <TestimonialsPageComponent />
+
+
             
     {        //<SkillsPageComponent />
     }				
 
-            <MyProjectsComponent />
+            
             {/* <PortfolioPageComponent /> */}
-            {/* <TestimonialsPageComponent /> */}
 {           // <CounterboxPageComponent />
 }            
 

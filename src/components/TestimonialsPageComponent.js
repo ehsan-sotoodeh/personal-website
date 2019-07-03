@@ -1,68 +1,62 @@
 import React, { Component }  from 'react';
-
-
-
-export default function TestimonialsPageComponent(){
+import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+export default function TestimonialsPageComponent2(){
     return(
-		<div class="arlo_tm_section" id="testimonials">
-<div class="arlo_tm_testimonials_wrapper_all">
-  <div class="arlo_tm_universal_box_wrap">
-    <div class="bg_wrap">
-      <div class="overlay_image testimonial jarallax" data-speed="0"></div>
-      <div class="overlay_color testimonial"></div>
-    </div>
-    <div class="content testimonial">
-      <div class="arlo_tm_testimonial_wrap">
-        <div class="container">
-          <div class="carousel_wrap">
-            <ul class="owl-carousel">
-              <li class="item">
-                <div class="inner">
-                  <div class="quotebox_wrap">
-                    <i class="xcon-quote-left"></i>
-                  </div>
-                  <div class="definitions_wrap">
-                    <p>“Arlo team are easy to work with and helped me make amazing websites in a short amount of time. Thanks guys for works.”</p>
-                  </div>
-                  <div class="name_holder">
-                    <p>Antonio Baraley, CEO Founder</p>
-                  </div>
+              <div class="arlo_tm_section" id="services">
+                      <div class="arlo_tm_services_wrap">
+                          <div class="container testimonialsComponent">
+                              <div class="arlo_tm_title_holder">
+                                  <h3>Testimonials</h3>
+                                  <span>What <b>my previous employers</b> are saying</span>
+                              </div>
+
+        
+		<div class="col-sm-12">
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				{/* <!-- Carousel indicators --> */}
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>   
+				{/* <!-- Wrapper for carousel items --> */}
+				<div class="carousel-inner">
+					<div class="item carousel-item active">
+						<div class="row">
+							<div class="col-12">
+								<div class="media">
+									<div class="media-left d-flex mr-3">
+										<a href="#">
+											<img src="https://www.tutorialrepublic.com/examples/images/clients/6.jpg" alt=""/>
+										</a>
+									</div>
+									<div class="media-body">
+										<div class="testimonial">
+                                            <FontAwesomeIcon className="qouteIcon" icon={faQuoteLeft} />
+											<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
+											<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						
+                        </div>			
+					</div>
+
                 </div>
-              </li>
-              <li class="item">
-                <div class="inner">
-                  <div class="quotebox_wrap">
-                    <i class="xcon-quote-left"></i>
+			</div>
+		</div>
+
+
+
+                          </div>
+                      </div>
                   </div>
-                  <div class="definitions_wrap">
-                    <p>“We were looking for a logo with a touch of modernism. Arlo grasped our needs and produced a stunning design.”</p>
-                  </div>
-                  <div class="name_holder">
-                    <p>Calena Gomez, AOC Designer</p>
-                  </div>
-                </div>
-              </li>
-              <li class="item">
-                <div class="inner">
-                  <div class="quotebox_wrap">
-                    <i class="xcon-quote-left"></i>
-                  </div>
-                  <div class="definitions_wrap">
-                    <p>“Awesome to work with Arlo. Good organized, easy to communicate with, responsive with next iterations.”</p>
-                  </div>
-                  <div class="name_holder">
-                    <p>Torren Winston, Photographer.</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-       
-  );
-}
+
+
+
+    );
+  }
+  
