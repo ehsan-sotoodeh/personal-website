@@ -27,35 +27,41 @@ class App extends Component {
 
   render(){
     return(
-      <div class="arlo_tm_content" >
+      <div className="arlo_tm_content" >
         <NavbarComponent />
-        <LeftSidebarComponent />
-        <div class="arlo_tm_rightpart">
-          <div class="rightpart_inner">
-            <HomePageComponent />
-            <AboutPageComponent />
-            <MyProjectsComponent />
-            <TestimonialsPageComponent />
-            <MyEducationComponent />
-            <NewsPageComponent />
-            <FooterComponent />
-
-            
-    {        //<SkillsPageComponent />
-    }				
-
-            
-            {/* <PortfolioPageComponent /> */}
-{           // <CounterboxPageComponent />
-}            
-
-
-          
-        
-          
-        
+        <div className="row">
+          <div  className="primaryColor col-lg-3 p-lg-0"  >
+            <LeftSidebarComponent/>
           </div>
-		</div>
+          <div className="arlo_tm_rightpart col-lg-9 p-lg-0">
+            <div class="rightpart_inner">
+              <HomePageComponent />
+              <AboutPageComponent />
+              <MyProjectsComponent />
+              <TestimonialsPageComponent />
+              <MyEducationComponent />
+              <NewsPageComponent />
+              <FooterComponent />
+
+              
+      {        //<SkillsPageComponent />
+      }				
+
+              
+              {/* <PortfolioPageComponent /> */}
+  {           // <CounterboxPageComponent />
+  }            
+
+
+            
+          
+            
+          
+            </div>
+          </div>
+        
+
+        </div>
       </div>
     )
   }

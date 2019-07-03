@@ -1,9 +1,11 @@
 import React, { Component }  from 'react';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin,faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFileCode,faAt } from '@fortawesome/free-solid-svg-icons'
 
 export default function AboutPageComponent(){
     return(
-      <div class="arlo_tm_section relative" id="about">
+      <div class="arlo_tm_section relative aboutComponent" id="about">
       <div class="arlo_tm_about_wrapper_all">
         <div class="container">
           <div class="arlo_tm_title_holder">
@@ -35,7 +37,11 @@ export default function AboutPageComponent(){
   
                         </ul>
                    </p>
-  
+                   
+                  
+                  
+
+
                 </div>
                 <div class="about_short_contact_wrap">
                   <ul>
@@ -54,14 +60,23 @@ export default function AboutPageComponent(){
                   </ul>
                 </div>
                 <div class="buttons_wrap">
-                  <ul>
-                    <li>
-                      <a href="index.html"><span>Download CV</span></a>
-                    </li>
-                    <li class="anchor">
-                      <a href="mailto:ehsan.sotoodeh@usask.ca"><span>Send Message</span></a>
-                    </li>
-                  </ul>
+                    <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" class="button linkedin">
+                      <span className="ml-2" > <FontAwesomeIcon icon={faLinkedin} /></span>
+                      <p className="text-light" >Linkedin</p>
+                    </a>
+                    <a href="https://github.com/ehsan-sotoodeh" target="_blank" class="button github">
+                      <span className="ml-2 " ><FontAwesomeIcon className="" icon={faGithubSquare} /></span>
+                      <p className="text-light" >Github</p>
+                    </a>
+                    <a href="#" target="_blank" class="button stackexchange">
+                      <span className="ml-2 " ><FontAwesomeIcon className="" icon={faFileCode} /></span>
+                      <p className="text-light" >Resume</p>
+                    </a>
+                    <a href="mailto:ehsan.sotoodeh@usask.ca" target="_blank" class="button twitter">
+                      <span className="ml-2 " ><FontAwesomeIcon className="" icon={faAt} /></span>
+                      <p className="text-light" >Email</p>
+                    </a>
+
                 </div>
               </div>
             </div>

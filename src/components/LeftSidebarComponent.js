@@ -20,15 +20,6 @@ export default function LeftSidebarComponent(){
                       </ul>
                   </div>
                   <div class="leftpart_bottom">
-                      <div class="social_wrap">
-                          <ul>
-                              <li><a href="#"><i class="xcon-facebook"></i></a></li>
-                              <li><a href="#"><i class="xcon-twitter"></i></a></li>
-                              <li><a href="#"><i class="xcon-linkedin"></i></a></li>
-                              <li><a href="#"><i class="xcon-instagram"></i></a></li>
-                              <li><a href="#"><i class="xcon-behance"></i></a></li>
-                          </ul>
-                      </div>
                   </div>
                   <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
               </div>
