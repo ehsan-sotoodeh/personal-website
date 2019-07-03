@@ -2378,3 +2378,88 @@ img.svg{
 	.arlo_tm_portfolio_list > li{width: 100%;padding-left: 0px;}
 	.arlo_tm_counter_wrap{padding: 94px 0px 48px 0px;}
 }	
+
+/* TODO move to proper locations */
+/*  Added by me */
+.notice {
+    padding: 15px;
+    background-color: #fafafa;
+    border-left: 6px solid #7f7f84;
+    margin-bottom: 10px;
+    -webkit-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+       -moz-box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+            box-shadow: 0 5px 8px -6px rgba(0,0,0,.2);
+}
+.notice-sm {
+    padding: 10px;
+    font-size: 80%;
+}
+.notice-lg {
+    padding: 35px;
+    font-size: large;
+}
+.notice-success {
+    border-color: #80D651;
+}
+.notice-success>strong {
+    color: #80D651;
+}
+.notice-info {
+    border-color: #45ABCD;
+}
+.notice-info>strong {
+    color: #45ABCD;
+}
+.notice-warning {
+    border-color: #FEAF20;
+}
+.notice-warning>strong {
+    color: #FEAF20;
+}
+.notice-danger {
+    border-color: #d73814;
+}
+.notice-danger>strong {
+    color: #d73814;
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    background: #fff;
+
+}
+.media .media-figure {
+	margin-right: 1em;
+	max-height: 150px;
+	max-width: 150px;
+	overflow: hidden;
+
+}
+
+.media .media-figure img {
+	width: 100%;
+}
+.media .media-body {
+	flex: 1;
+	padding: 1em;
+}
+.media .media-body .media-title{
+	font-size: 1.2rem
+	
+}
+.media .media-body p{
+	margin-top:10px;
+	line-height: 1.2;
+	letter-spacing: 1px;
+	
+}
+.media .alignCenter {
+	align-items: center;  
+}
+
+.arlo_tm_services_wrap hr{
+	margin-bottom: 5px;
+	margin-top:5px;
+}
