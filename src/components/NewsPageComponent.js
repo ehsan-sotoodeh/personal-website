@@ -3,21 +3,21 @@ import React, { Component }  from 'react';
 
 export default function NewsPageComponent(){
     return(
-			<div class="arlo_tm_section" id="news">
+			<div class="arlo_tm_section">
 <div class="arlo_tm_news_wrap">
   <div class="container">
-    <div class="arlo_tm_title_holder news">
-      <h3>Latest News</h3>
-      <span>Check out our latest News</span>
+    <div class="arlo_tm_title_holder news"  id="news">
+      <h3>Blog</h3>
+      <span>Where I share what I know...</span>
     </div>
     <div class="arlo_tm_list_wrap blog_list">
       <ul class="total">
         <li class="wow fadeInUp" data-wow-duration="1.2s">
           <div class="inner_list">
             <div class="image_wrap">
-              <img class="small" src="img/blog/500x350.jpg" alt="" />
-              <img class="big" src="img/blog/1170x450.jpg" alt="" />
-              <div class="news_image" data-url="img/blog/1.jpg"></div>
+              <img class="small" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <img class="big" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <div class="news_image" data-url="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png"></div>
               <a class="link_news" href="index.html"></a>
             </div>
             <div class="definitions_wrap">
@@ -50,9 +50,9 @@ export default function NewsPageComponent(){
         <li class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.2s">
           <div class="inner_list">
             <div class="image_wrap">
-              <img class="small" src="img/blog/500x350.jpg" alt="" />
-              <img class="big" src="img/blog/1170x450.jpg" alt="" />
-              <div class="news_image" data-url="img/blog/2.jpg"></div>
+              <img class="small" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <img class="big" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <div class="news_image" data-url="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png"></div>
               <a class="link_news" href="index.html"></a>
             </div>
             <div class="definitions_wrap">
@@ -85,9 +85,9 @@ export default function NewsPageComponent(){
         <li class="wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.4s">
           <div class="inner_list">
             <div class="image_wrap">
-              <img class="small" src="img/blog/500x350.jpg" alt="" />
-              <img class="big" src="img/blog/1170x450.jpg" alt="" />
-              <div class="news_image" data-url="img/blog/3.jpg"></div>
+              <img class="small" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <img class="big" src="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png" alt="" />
+              <div class="news_image" data-url="https://raelyntan.com/wp-content/uploads/2018/06/top-blogger-quotes-hori-1.png"></div>
               <a class="link_news" href="index.html"></a>
             </div>
             <div class="definitions_wrap">

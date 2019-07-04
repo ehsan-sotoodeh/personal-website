@@ -30,16 +30,16 @@ class App extends Component {
       <div className="arlo_tm_content" >
         <NavbarComponent />
         <div className="row">
-          <div  className="primaryColor col-lg-3 p-lg-0"  >
+          <div  className="primaryColor col-lg-2 p-lg-0"  >
             <LeftSidebarComponent/>
           </div>
-          <div className="arlo_tm_rightpart col-lg-9 p-lg-0">
+          <div className="arlo_tm_rightpart col-lg-10 p-lg-0">
             <div class="rightpart_inner">
               <HomePageComponent />
               <AboutPageComponent />
               <MyProjectsComponent />
+              <MyEducationComponent />  
               <TestimonialsPageComponent />
-              <MyEducationComponent />
               <NewsPageComponent />
               <FooterComponent />
 
