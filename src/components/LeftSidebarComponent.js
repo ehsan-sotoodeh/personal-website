@@ -2,6 +2,7 @@ import React, { Component }  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPenNib,faCode,faUserTie,faHome,faGraduationCap,faQuoteLeft} from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import Scrollspy from 'react-scrollspy'
 
 
 export default function LeftSidebarComponent(){
@@ -12,14 +13,15 @@ export default function LeftSidebarComponent(){
                       <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
                   </div>
                   <div class="menu_list_wrap">
-                      <ul class="anchor_nav">
+                        <Scrollspy items={ ['home', 'about', 'projects'] } currentClassName="is-current">
+
                           <li><AnchorLink  href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink></li>
                           <li><AnchorLink  href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink></li>
                           <li><AnchorLink  href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink></li>
                           <li><AnchorLink  href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink></li>
                           <li><AnchorLink  href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink></li>
-                          <li><AnchorLink  href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink    ></li>
-                      </ul>
+                          <li><AnchorLink  href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink></li>
+                        </Scrollspy>
                   </div>
                   <div class="leftpart_bottom">
                   </div>
