@@ -5,29 +5,76 @@ import { faPenNib,faCode,faUserTie,faHome,faGraduationCap,faQuoteLeft} from '@fo
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 
-export default function NavbarComponent(){
-    return (
-        <div className="d-block d-lg-none">
-          <Navbar className="" collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Ehsan Sotoodeh</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mr-auto menu_list_wrap">
-                <ul class="anchor_nav list-group-flush" >
-                  <AnchorLink  className="list-group-item transparent text-light w-100" href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink> 
-                  <AnchorLink  className="list-group-item transparent  text-light" href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink>
-                  <AnchorLink  className="list-group-item transparent  text-light" href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink>
-                  <AnchorLink  className="list-group-item transparent  text-light" href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink>
-                  <AnchorLink  className="list-group-item transparent  text-light" href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink>
-                  <AnchorLink  className="list-group-item transparent  text-light" href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink>
+export default class NavbarComponent extends Component{
+  constructor(props) {
+        super(props);
 
-                </ul>
+      this.closeNavbar = this.closeNavbar.bind(this);
+      this.toggle = this.toggle.bind(this);
+     // this.handleClickOutside = this.handleClickOutside.bind(this);
+
+       this.state = {
+            isOpen: false
+        };
+    }
+
+  //   componentWillMount() {
+  //     document.addEventListener('mousedown', this.handleClickOutside);
+  // }
+  // componentWillUnmount() {
+  //     document.removeEventListener('mousedown', this.handleClickOutside);
+  // }
+
+    //   handleClickOutside(event) {
+    //     const t = event.target;
+    //     console.log(t.classList)
+
+    //     if (this.state.isOpen && !t.classList.contains('navbar-toggler')) {
+    //       console.log("clicked outside of navbar")
+    //       event.preventDefault();
+    //        this.closeNavbar();
+    //     }
+    // }
+
+    closeNavbar() {
+        this.setState({
+            isOpen: false
+        });
+    }
+    toggle() {
+      this.setState({
+          isOpen: !this.state.isOpen
+      });
+  }
+
+
+
+    render(){
+      return (
+          <div className="d-block d-lg-none fixed-top">
+            <Navbar className=""  expanded={this.state.isOpen} onToggle={this.toggle} expand="lg" bg="dark" variant="dark">
+              <Navbar.Brand href="#home">Ehsan Sotoodeh</Navbar.Brand>
+              <Navbar.Toggle className="navbar-toggler" aria-controls="responsive-navbar-nav collapse" />
+              <Navbar.Collapse id="responsive-navbar-nav collapse"  >
+                <Nav className="mr-auto menu_list_wrap">
+                  <ul className="anchor_nav list-group-flush" >
+                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent text-light w-100" href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink> 
+                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink>
+                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink>
+                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink>
+                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink>
+                    <AnchorLink onClick={this.closeNavbar} offset="70"  className="list-group-item transparent  text-light" href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink>
   
-              </Nav>
-  
-            </Navbar.Collapse>
-          </Navbar>
-  
-        </div>
-    )
+                  </ul>
+    
+                </Nav>
+    
+              </Navbar.Collapse>
+            </Navbar>
+    
+          </div>
+      )
+
+    }
+
   }
