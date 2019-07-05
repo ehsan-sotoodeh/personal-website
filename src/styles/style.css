@@ -2425,7 +2425,7 @@ img.svg{
 .myProjectsComponent .media {
     display: flex;
     align-items: flex-start;
-    border: 1px solid #ccc;
+    border: 1px solid #fff;
     background: #fff;
 
 }
@@ -2545,6 +2545,9 @@ img.svg{
 }
 .transparent{
 	background-color: #00000000
+}
+.fontsize09{
+	font-size:0.9rem;
 }
 
 .aboutComponent .button {

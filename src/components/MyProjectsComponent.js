@@ -13,9 +13,30 @@ export default function MyProjectsComponent(){
                               </div>
 
 
-                              <div className="card mb-2">
+                              <div className="mb-2">
+                                    <div class="media">
+                                        <div class="media-figure d-none d-sm-block">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg" alt="" />
+                                        </div>
+                                        <div class="media-body">
+                                            <h4 className="media-title"><strong>Global Institude for Water Security</strong></h4>
+                                            <p>idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                                            <hr/>
+                                            <p>
+                                                <span class="badge badge-warning p-1 mr-2">Python</span>
+                                                <span class="badge badge-warning p-1 mr-2">Express</span>
+                                                <span class="badge badge-warning p-1 mr-2">JQuery</span>
+                                            </p>
+                                        </div>
+
+                                    </div>
+                              </div>
+                          
+
+
+                              <div className=" mb-2">
                                     <article class="media">
-                                        <div class="media-figure">
+                                        <div class="media-figure  d-none d-sm-block">
                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg" alt="" />
                                         </div>
                                         <div class="media-body">
@@ -33,30 +54,9 @@ export default function MyProjectsComponent(){
                               </div>
                           
 
-
-                              <div className="card mb-2">
+                              <div className=" mb-2">
                                     <article class="media">
-                                        <div class="media-figure">
-                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg" alt="" />
-                                        </div>
-                                        <div class="media-body">
-                                            <h4 className="media-title"><strong>Global Institude for Water Security</strong></h4>
-                                            <p>idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
-                                            <hr/>
-                                            <p>
-                                                <span class="badge badge-warning p-1 mr-2">Python</span>
-                                                <span class="badge badge-warning p-1 mr-2">Express</span>
-                                                <span class="badge badge-warning p-1 mr-2">JQuery</span>
-                                            </p>
-                                        </div>
-
-                                    </article>
-                              </div>
-                          
-
-                              <div className="card mb-2">
-                                    <article class="media">
-                                        <div class="media-figure">
+                                        <div class="media-figure  d-none d-sm-block ">
                                             <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg" alt="" />
                                         </div>
                                         <div class="media-body">
