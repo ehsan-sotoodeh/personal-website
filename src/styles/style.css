@@ -192,6 +192,38 @@ img.svg{
 	     -o-transition: all .3s ease;
 	        transition: all .3s ease;
 }
+
+.is-current a:before{
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 0px;
+	background-color: #E3872D;
+	top: 14px;
+	transform: translateY(-50%);
+	left: 100%;
+	margin-left: 10px;
+	
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+}
+
+.is-current a{
+	color: #E3872D !important;
+	-webkit-transition: all .3s ease;
+	   -moz-transition: all .3s ease;
+	    -ms-transition: all .3s ease;
+	     -o-transition: all .3s ease;
+	        transition: all .3s ease;
+
+}
+
+
+
+
 .arlo_tm_leftpart_wrap .menu_list_wrap ul li a:hover{color: #E3872D;}
 .arlo_tm_leftpart_wrap .menu_list_wrap ul li a:hover:before{width: 35px;}
 .arlo_tm_leftpart_wrap .leftpart_bottom{

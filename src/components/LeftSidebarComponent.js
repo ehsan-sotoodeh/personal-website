@@ -13,7 +13,7 @@ export default function LeftSidebarComponent(){
                       <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
                   </div>
                   <div class="menu_list_wrap">
-                        <Scrollspy items={ ['home', 'about', 'projects'] } currentClassName="is-current">
+                        <Scrollspy items={ ['home', 'about', 'projects', 'education', 'testimonials', 'news'] } offset={-50} currentClassName="is-current">
 
                           <li><AnchorLink  href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink></li>
                           <li><AnchorLink  href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink></li>
