@@ -11,30 +11,30 @@ export default class NavbarComponent extends Component{
 
       this.closeNavbar = this.closeNavbar.bind(this);
       this.toggle = this.toggle.bind(this);
-     // this.handleClickOutside = this.handleClickOutside.bind(this);
+     this.handleClickOutside = this.handleClickOutside.bind(this);
 
        this.state = {
             isOpen: false
         };
     }
 
-  //   componentWillMount() {
-  //     document.addEventListener('mousedown', this.handleClickOutside);
-  // }
-  // componentWillUnmount() {
-  //     document.removeEventListener('mousedown', this.handleClickOutside);
-  // }
+    componentWillMount() {
+      document.addEventListener('mousedown', this.handleClickOutside);
+  }
+  componentWillUnmount() {
+      document.removeEventListener('mousedown', this.handleClickOutside);
+  }
 
-    //   handleClickOutside(event) {
-    //     const t = event.target;
-    //     console.log(t.classList)
+      handleClickOutside(event) {
+        const t = event.target;
+        console.log(t.classList)
 
-    //     if (this.state.isOpen && !t.classList.contains('navbar-toggler')) {
-    //       console.log("clicked outside of navbar")
-    //       event.preventDefault();
-    //        this.closeNavbar();
-    //     }
-    // }
+        if (this.state.isOpen && !t.classList.contains('navbarItem')) {
+          console.log("clicked outside of navbar")
+         // event.preventDefault();
+           this.closeNavbar();
+        }
+    }
 
     closeNavbar() {
         this.setState({
@@ -58,12 +58,12 @@ export default class NavbarComponent extends Component{
               <Navbar.Collapse id="responsive-navbar-nav collapse"  >
                 <Nav className="mr-auto menu_list_wrap">
                   <ul className="anchor_nav list-group-flush" >
-                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent text-light w-100" href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink> 
-                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink>
-                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink>
-                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink>
-                    <AnchorLink onClick={this.closeNavbar} offset="70" className="list-group-item transparent  text-light" href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink>
-                    <AnchorLink onClick={this.closeNavbar} offset="70"  className="list-group-item transparent  text-light" href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink>
+                    <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent text-light w-100" href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink> 
+                    <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink>
+                    <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink>
+                    <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink>
+                    <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink>
+                    <AnchorLink  onClick={this.closeNavbar} offset="70"  className="list-group-item navbarItem transparent  text-light" href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink>
   
                   </ul>
     
