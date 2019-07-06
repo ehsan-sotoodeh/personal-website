@@ -2549,6 +2549,28 @@ img.svg{
 .fontsize09{
 	font-size:0.9rem;
 }
+.fontsize10{
+	font-size:1rem;
+}
+.fontsize11{
+	font-size:1.1rem;
+}
+.fontsize12{
+	font-size:1.2rem;
+}
+.fontsize15{
+	font-size:1.5rem;
+}
+.fontsize17{
+	font-size:1.7rem;
+}
+.fontsize20{
+	font-size:2rem;
+}
+
+.lineHeight15{
+	line-height: 1.5rem;
+}
 
 .aboutComponent .button {
 
