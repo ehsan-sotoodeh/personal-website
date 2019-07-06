@@ -6,6 +6,10 @@ const constants = {
     TESTIMONIALS : {
         FETCH_ALL : "FETCH_ALL",
         FETCH_BY_ID : "FETCH_BY_ID"
+    },
+    BLOG : {
+        FETCH_ALL : "FETCH_ALL",
+        FETCH_BY_ID : "FETCH_BY_ID"
     }
 }
 

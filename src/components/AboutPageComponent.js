@@ -15,7 +15,7 @@ export default function AboutPageComponent(){
           <div class="arlo_tm_about_wrap">
             <div class="author_wrap">
   
-              <div class="rightbox">
+              <div class="rightbox text-justify">
                 <div class="arlo_tm_mini_title_holder">
                   <h3>Hi, I'm Ehsan Sotoodeh</h3>
                   </div><br/><br/>
@@ -59,7 +59,7 @@ export default function AboutPageComponent(){
                     </li>
                   </ul>
                 </div>
-                <div class="buttons_wrap">
+                <div class="buttons_wrap ">
                     <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" class="button linkedin">
                       <span className="ml-2" > <FontAwesomeIcon icon={faLinkedin} /></span>
                       <p className="text-light" >Linkedin</p>

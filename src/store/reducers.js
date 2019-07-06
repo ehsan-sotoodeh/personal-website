@@ -25,8 +25,21 @@ export const testimonials = (state = initialState.testimonials,action)=>{
             return state;
     }
 }
+export const blog = (state = initialState.blog,action)=>{
+    let newState = []
+    switch(action.type){
+        case C.BLOG.FETCH_ALL :
+            return state = [...action.payload];
+
+        case C.BLOG.FETCH_BY_ID :
+            return [...state,action.payload];
+        default:
+            return state;
+    }
+}
 
 export default combineReducers({
     projects,
-    testimonials
+    testimonials,
+    blog
 });

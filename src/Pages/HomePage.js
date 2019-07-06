@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {connect } from 'react-redux'
 
-import {fetchAllProjects , fetchOneProjectById} from '../store/actions'
+import {fetchAllProjects , fetchOneProjectById,fetchAllPosts} from '../store/actions'
 
 
 
@@ -25,6 +25,7 @@ const mapStateToProps = (state) =>{
   return {
       projects : state.projects,
       testimonials : state.testimonials,
+      blog : state.blog
   }
 }
 
@@ -32,6 +33,9 @@ const mapDispatchToProps = dispatch => {
   return{
         fetchAllProjects(){
           dispatch(fetchAllProjects())
+      },
+      fetchAllPosts(maxResults){
+        dispatch(fetchAllPosts(maxResults))
       }
   }
 }
@@ -46,6 +50,8 @@ class HomePage extends Component {
 
 
   render(){
+    let blog = this.props.fetchAllPosts(3);
+    console.log(blog)
 
     return(
       <div className="arlo_tm_content" >

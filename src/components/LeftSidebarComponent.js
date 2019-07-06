@@ -12,7 +12,7 @@ export default function LeftSidebarComponent(){
                   <div class="logo_wrap">
                       <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
                   </div>
-                  <div class="menu_list_wrap">
+                  <div class="menu_list_wrap text-justify">
                         <Scrollspy items={ ['home', 'about', 'projects', 'education', 'testimonials', 'news'] } offset={-50} currentClassName="is-current">
 
                           <li><AnchorLink  href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink></li>
