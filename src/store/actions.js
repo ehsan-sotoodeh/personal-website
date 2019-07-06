@@ -14,13 +14,13 @@ export const fetchAllProjects = () => async (dispatch , getState) =>{
 
     }
 }
-export const fetchOneProjectById = (snippetId) => async (dispatch , getState) =>{
+export const fetchOneProjectById = (projectId) => async (dispatch , getState) =>{
 
     try{
 
         dispatch({
             type: C.PROJECTS.FETCH_BY_ID,
-            payload: snippet
+            payload: projectId
         });
     }catch(error){
         return new Error(error)

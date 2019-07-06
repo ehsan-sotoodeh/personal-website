@@ -2,7 +2,8 @@ import React, { Component }  from 'react';
 import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
 
 
-export default function MyProjectsComponent(){
+export default function MyProjectsComponent({projects}){
+    console.log(projects)
     return(
               <div class="myProjectsComponent arlo_tm_section" id="projects">
                       <div class="arlo_tm_services_wrap">

@@ -3,6 +3,7 @@ import {combineReducers} from 'redux'
 import initialState from './initialState.json'
 
 export const projects = (state = initialState,action)=>{
+    console.log(state)
     let newState = []
     switch(action.type){
         case C.PROJECTS.FETCH_ALL :

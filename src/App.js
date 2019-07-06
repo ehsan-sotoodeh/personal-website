@@ -1,4 +1,7 @@
 import React,{Component} from 'react';
+import {connect } from 'react-redux'
+
+import {fetchAllProjects , fetchOneProjectById} from './store/actions'
 
 
 import './styles/App.css';
@@ -19,6 +22,25 @@ import PortfolioPageComponent from './components/PortfolioPageComponent'
 import CounterboxPageComponent from './components/CounterboxPageComponent'
 import TestimonialsPageComponent from './components/TestimonialsPageComponent'
 
+
+
+const mapStateToProps = (state) =>{
+  console.log(state)
+  return {
+      projects : state.projects,
+      testimonials : state.testimonials,
+  }
+}
+
+const mapDispatchToProps = dispatch => {
+  return{
+        fetchAllProjects(){
+          dispatch(fetchAllProjects())
+      }
+  }
+}
+
+
 class App extends Component {
 
   componentDidMount() {
@@ -28,6 +50,8 @@ class App extends Component {
 
 
   render(){
+
+    console.log(this.props)
     return(
       <div className="arlo_tm_content" >
         <NavbarComponent />
@@ -39,7 +63,7 @@ class App extends Component {
             <div class="rightpart_inner">
               <HomePageComponent />
               <AboutPageComponent />
-              <MyProjectsComponent />
+              <MyProjectsComponent projects={this.props.projects} />
               <MyEducationComponent />  
               <TestimonialsPageComponent />
               <NewsPageComponent />
@@ -74,7 +98,4 @@ class App extends Component {
 }
 
 
-
-
-
-export default App;
+export default connect(mapStateToProps,mapDispatchToProps)(App);

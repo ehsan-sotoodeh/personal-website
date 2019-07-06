@@ -2,10 +2,10 @@
     "projects" : [
         {
             "id":1,
-            "title":"Project 1 title",
+            "title":"Global Institute for Water Security",
             "content":"Project 1 content",
-            "keywords":["keyword1","keyword2","keyword3"],
-            "shortDescription":"Project 1 short description "
+            "keywords":["Python","Express","JQuery" ],
+            "shortDescription":"idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat"
         },
         {
             "id":2,
