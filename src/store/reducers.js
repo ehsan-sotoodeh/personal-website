@@ -2,9 +2,7 @@ import C from './constants'
 import {combineReducers} from 'redux'
 import initialState from './initialState.json'
 
-export const projects = (state = initialState,action)=>{
-    console.log(state)
-    let newState = []
+export const projects = (state = initialState.projects,action)=>{
     switch(action.type){
         case C.PROJECTS.FETCH_ALL :
             return state = [...action.payload];
@@ -15,7 +13,7 @@ export const projects = (state = initialState,action)=>{
             return state;
     }
 }
-export const testimonials = (state = initialState,action)=>{
+export const testimonials = (state = initialState.testimonials,action)=>{
     let newState = []
     switch(action.type){
         case C.TESTIMONIALS.FETCH_ALL :

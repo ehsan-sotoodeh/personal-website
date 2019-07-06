@@ -5,17 +5,24 @@
             "title":"Global Institute for Water Security",
             "content":"Project 1 content",
             "keywords":["Python","Express","JQuery" ],
-            "shortDescription":"idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat"
+            "shortDescription":"idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
+            "mainImage" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg"
         },
         {
             "id":2,
             "title":"Project 2 title",
             "content":"Project 2 content",
             "keywords":["22","2222","222222"],
-            "shortDescription":"Project 2 short description "
+            "shortDescription":"Project 2 short description ",
+            "mainImage" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg"
+
         }
     ],
     "testimonials":[
+        {
+            "aaa":"bbbbb",
+            "ccccccccc":"ddddddddddd"
+        }
         
     ] 
  

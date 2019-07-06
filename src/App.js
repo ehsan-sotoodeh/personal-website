@@ -1,101 +1,23 @@
-import React,{Component} from 'react';
-import {connect } from 'react-redux'
+import React from 'react';
+import {BrowserRouter , Route, Switch} from 'react-router-dom'
+import HomePage from './pages/HomePage'
+import SnippetPage from './Pages/SnippetPage'
+import Page404 from './Pages/Page404'
 
-import {fetchAllProjects , fetchOneProjectById} from './store/actions'
-
-
-import './styles/App.css';
-import './styles/plugins.css';
-import './styles/style.css';
-
-import FooterComponent from './components/FooterComponent'
-import NavbarComponent from './components/NavbarComponent'
-import HomePageComponent from './components/HomePageComponent'
-import NewsPageComponent from './components/NewsPageComponent'
-import AboutPageComponent from './components/AboutPageComponent'
-import MyProjectsComponent from './components/MyProjectsComponent'
-import SkillsPageComponent from './components/SkillsPageComponent'
-import ContactPageComponent from './components/ContactPageComponent'
-import LeftSidebarComponent from './components/LeftSidebarComponent'
-import MyEducationComponent from './components/MyEducationComponent'
-import PortfolioPageComponent from './components/PortfolioPageComponent'
-import CounterboxPageComponent from './components/CounterboxPageComponent'
-import TestimonialsPageComponent from './components/TestimonialsPageComponent'
-
-
-
-const mapStateToProps = (state) =>{
-  console.log(state)
-  return {
-      projects : state.projects,
-      testimonials : state.testimonials,
-  }
-}
-
-const mapDispatchToProps = dispatch => {
-  return{
-        fetchAllProjects(){
-          dispatch(fetchAllProjects())
-      }
-  }
-}
-
-
-class App extends Component {
-
-  componentDidMount() {
-
-  }
-
-
-
-  render(){
-
-    console.log(this.props)
-    return(
-      <div className="arlo_tm_content" >
-        <NavbarComponent />
-        <div className="row">
-          <div  className="primaryColor col-lg-3  col-xl-2 p-lg-0"  >
-            <LeftSidebarComponent/>
-          </div>
-          <div className="arlo_tm_rightpart col-lg-9 col-xl-10 p-lg-0">
-            <div class="rightpart_inner">
-              <HomePageComponent />
-              <AboutPageComponent />
-              <MyProjectsComponent projects={this.props.projects} />
-              <MyEducationComponent />  
-              <TestimonialsPageComponent />
-              <NewsPageComponent />
-              <FooterComponent />
-
-              
-      {        //<SkillsPageComponent />
-      }				
-
-              
-              {/* <PortfolioPageComponent /> */}
-  {           // <CounterboxPageComponent />
-  }            
-
-
-            
-          
-            
-          
+function App() {
+  return (
+    <div className="App">
+      <BrowserRouter>
+            <div>
+              <Switch>
+                <Route path="/" component={HomePage} exact />
+                <Route path="/snippet/:snippetId" component={SnippetPage}/>
+                <Route  component={Page404}/>
+              </Switch>
             </div>
-          </div>
-        
-
-        </div>
-      </div>
-    )
-  }
-
-
-  
-
+      </BrowserRouter>
+    </div>
+  );
 }
 
-
-export default connect(mapStateToProps,mapDispatchToProps)(App);
+export default App;
