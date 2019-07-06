@@ -1,8 +1,11 @@
 import React from 'react';
 import {BrowserRouter , Route, Switch} from 'react-router-dom'
-import HomePage from './pages/HomePage'
-import SnippetPage from './Pages/SnippetPage'
+import HomePage from './Pages/HomePage'
+import ProjectPage from './Pages/ProjectPage'
 import Page404 from './Pages/Page404'
+
+
+
 
 function App() {
   return (
@@ -11,7 +14,7 @@ function App() {
             <div>
               <Switch>
                 <Route path="/" component={HomePage} exact />
-                <Route path="/snippet/:snippetId" component={SnippetPage}/>
+                <Route path="/project/:projectId" component={ProjectPage}/>
                 <Route  component={Page404}/>
               </Switch>
             </div>

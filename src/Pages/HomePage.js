@@ -4,9 +4,6 @@ import {connect } from 'react-redux'
 import {fetchAllProjects , fetchOneProjectById} from '../store/actions'
 
 
-import './styles/App.css';
-import './styles/plugins.css';
-import './styles/style.css';
 
 import FooterComponent from '../components/FooterComponent'
 import NavbarComponent from '../components/NavbarComponent'

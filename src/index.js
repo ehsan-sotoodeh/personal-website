@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter , Route, Switch} from 'react-router-dom'
 import './styles/index.css';
+import './styles/App.css';
+import './styles/plugins.css';
+import './styles/style.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { Provider } from 'react-redux'
