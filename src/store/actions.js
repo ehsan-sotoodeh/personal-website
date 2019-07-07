@@ -17,7 +17,7 @@ export const fetchAllProjects = () => async (dispatch , getState) =>{
 }
 export const fetchOneProjectById = (projectId) => async (dispatch , getState) =>{
 
-    try{
+    try{ 
 
         dispatch({
             type: C.PROJECTS.FETCH_BY_ID,
