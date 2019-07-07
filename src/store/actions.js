@@ -33,9 +33,9 @@ export const fetchAllPosts = () => async (dispatch , getState) =>{
 
     try{
        let posts = await BlogService.fetchAllPosts(3);
-       console.log(posts)
+        console.log(posts)
         dispatch({
-            type: C.BLOG.FETCH_ALL,
+            type: C.BLOG.FETCH_ALL_BLOG_POSTS,
             payload: posts
         });
     }catch(error){

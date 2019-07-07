@@ -40,14 +40,15 @@ const mapDispatchToProps = dispatch => {
 class HomePage extends Component {
 
   componentDidMount() {
-
+    this.props.fetchAllPosts();
   }
 
 
 
   render(){
-    const blogs = this.props.fetchAllPosts();
-    console.log(blogs)
+    console.log(this.props)
+    //const blogs = 
+    console.log(this.props.projects)
  
     return(
       <div className="arlo_tm_content" >
