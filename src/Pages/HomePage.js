@@ -1,7 +1,7 @@
 import React,{Component} from 'react';
 import {connect } from 'react-redux'
 
-import {fetchAllProjects , fetchOneProjectById,fetchAllPosts} from '../store/actions'
+import {fetchAllPosts, fetchAllProjects } from '../store/actions'
 
 
 
@@ -11,12 +11,8 @@ import HomePageComponent from '../components/HomePageComponent'
 import NewsPageComponent from '../components/NewsPageComponent'
 import AboutPageComponent from '../components/AboutPageComponent'
 import MyProjectsComponent from '../components/MyProjectsComponent'
-import SkillsPageComponent from '../components/SkillsPageComponent'
-import ContactPageComponent from '../components/ContactPageComponent'
 import LeftSidebarComponent from '../components/LeftSidebarComponent'
 import MyEducationComponent from '../components/MyEducationComponent'
-import PortfolioPageComponent from '../components/PortfolioPageComponent'
-import CounterboxPageComponent from '../components/CounterboxPageComponent'
 import TestimonialsPageComponent from '../components/TestimonialsPageComponent'
 
 
@@ -31,12 +27,12 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = dispatch => {
   return{
-        fetchAllProjects(){
+          fetchAllProjects(){
           dispatch(fetchAllProjects())
-      },
-      fetchAllPosts(maxResults){
-        dispatch(fetchAllPosts(maxResults))
-      }
+        },
+        fetchAllPosts(){
+          dispatch(fetchAllPosts())
+        }
   }
 }
 
@@ -50,8 +46,8 @@ class HomePage extends Component {
 
 
   render(){
-    let blog = this.props.fetchAllPosts(3);
-    console.log(blog)
+    const blogs = this.props.fetchAllPosts();
+    console.log(blogs)
 
     return(
       <div className="arlo_tm_content" >

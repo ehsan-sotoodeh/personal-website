@@ -1,21 +1,26 @@
 import C from '../store/constants'
+require('dotenv').config();
 const axios = require('axios');
-require('dotenv').config()
 axios.defaults.withCredentials = true
-
+ 
 
 class BlogService  {
     constructor(){
+        console.log( process.env)
         this.apiKey = process.env.BLOGGER_API_KEY;
         this.blogID = process.env.BLOG_ID;
         this.serverAddress = process.env.SERVER_ADDRESS;
+        console.log(process.env.BLOGGER_API_KEY)
     }
     
     async fetchAllPosts(maxResults) {
         try {
+            console.log(maxResults)
             const url = `${this.SERVER_ADDRESS}blogs/${this.blogID}/posts/?key=${this.apiKey}`;
-
+            console.log(url)
+            
             let posts = await axios.get(url);
+            console.log(posts)
 
 
             posts = posts.json();

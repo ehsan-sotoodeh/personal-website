@@ -28,13 +28,14 @@ export const fetchOneProjectById = (projectId) => async (dispatch , getState) =>
 
     }
 }
-export const fetchAllPosts = (maxResults) => async (dispatch , getState) =>{
-    console.log("fetchAllPosts")
-    let posts = await BlogService.fetchAllPosts(maxResults);
-    console.log(posts)
+
+export const fetchAllPosts = () => async (dispatch , getState) =>{
+
     try{
+       let posts = await BlogService.fetchAllPosts(3);
+       console.log(posts)
         dispatch({
-            type: C.POST.FETCH_ALL,
+            type: C.BLOG.FETCH_ALL,
             payload: posts
         });
     }catch(error){
@@ -43,16 +44,58 @@ export const fetchAllPosts = (maxResults) => async (dispatch , getState) =>{
 
     }
 }
-export const fetchOnePostById = (projectId) => async (dispatch , getState) =>{
 
-    try{
 
-        dispatch({
-            type: C.POST.FETCH_BY_ID,
-            payload: projectId
-        });
-    }catch(error){
-        return new Error(error)
 
-    }
-}
+
+
+
+
+// export const fetchAllPosts = () => async (dispatch , getState) =>{
+
+//     try{
+
+//         dispatch({
+//             type: C.PROJECTS.FETCH_BY_ID,
+//             payload: "projectId"
+//         });
+//     }catch(error){
+//         return new Error(error)
+
+//     }
+// }
+
+
+
+
+
+// export const fetchAllPosts = (maxResults) => async (dispatch , getState) =>{
+//     try{
+//         // console.log("fetchAllPosts")
+//         // let posts = await BlogService.fetchAllPosts(maxResults);
+//         // console.log(posts)
+//         dispatch({
+//             type: C.POST.FETCH_ALL,
+//             payload: "posts"
+//         });
+//     }catch(error){
+//         console.log("erorrrrrr")
+
+//         console.log(error)
+//         return new Error(error)
+
+//     }
+// }
+// export const fetchOnePostById = (projectId) => async (dispatch , getState) =>{
+
+//     try{
+
+//         dispatch({
+//             type: C.POST.FETCH_BY_ID,
+//             payload: projectId
+//         });
+//     }catch(error){
+//         return new Error(error)
+
+//     }
+// }
