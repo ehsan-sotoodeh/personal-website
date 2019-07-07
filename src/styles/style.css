@@ -2546,6 +2546,9 @@ img.svg{
 .transparent{
 	background-color: #00000000
 }
+.fontsize08{
+	font-size:0.8rem;
+}
 .fontsize09{
 	font-size:0.9rem;
 }

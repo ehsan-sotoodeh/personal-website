@@ -40,31 +40,39 @@ export default function NewsPageComponent({posts}){
 }
 
 function Post({post}){
-var el = document.createElement( 'div' );
-el.innerHTML = post.content;
-//console.log((el))
+
+
+console.log(post)
 
 // extract first paragraph to make content summary;
-const contentStrings = ReactHtmlParser(post.content).filter(obj => {
-  if(typeof obj === "string")
-    return obj;
+const parsedHtml = ReactHtmlParser(post.content);
+let readmoreIndex = -1;
+const contentSummary = parsedHtml.map((obj,index) => {
+  console.log(obj)
+  if(obj.props){
+      if(obj.props.name === "more"){
+        readmoreIndex = index;
+      }
+  }
+  if(readmoreIndex === -1)
+      return obj;
 });
-const contentSummary = (contentStrings[0].length > 200)? contentStrings[0].substring(0,199)+" ..." : contentStrings[0]+" ..."
-console.log(contentStrings)
-console.log(contentSummary)
+console.log(readmoreIndex)
+//const contentSummary = ""; //(contentStrings[0].length > 300)? contentStrings[0].substring(0,299)+" ..." : contentStrings[0]+" ...";
+
+
 
   return(
     <li className="wow fadeInUp" data-wow-duration="1.2s" >
       <div className="inner_list">
-        <div className="definitions_wrap">
-            <div className="date_wrap">
-                <p>{new Date(post.published).toDateString()}<a href="">{post.author.displayName}</a></p>
-            </div>
-            <div className="title_holder">
-                <h3><a href="">{post.title}</a></h3>
+        <div className="m-4">
+
+            <div >
+                <h3 className="fontsize12 mb-3 lineHeight15" >{post.title}</h3>
             </div>
             <div className="definition text-justify">
-              <p>{ReactHtmlParser(contentSummary)}</p>
+              <p>{contentSummary}</p>
+              <p className="text-left fontsize08 font-weight-bold" >{new Date(post.published).toDateString()} / {post.author.displayName}</p>
             </div>
         </div>
       </div>
