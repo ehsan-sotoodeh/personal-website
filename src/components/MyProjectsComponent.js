@@ -19,10 +19,10 @@ export default function MyProjectsComponent({projects}){
 
 
     return(
-              <div class="myProjectsComponent arlo_tm_section" id="projects">
-                      <div class="arlo_tm_services_wrap">
-                          <div class="container">
-                              <div class="arlo_tm_title_holder">
+              <div className="myProjectsComponent arlo_tm_section" id="projects">
+                      <div className="arlo_tm_services_wrap">
+                          <div className="container">
+                              <div className="arlo_tm_title_holder">
                                   <h3>Projects</h3>
                                   <span>Click to know more </span>
                               </div>
@@ -37,7 +37,7 @@ export default function MyProjectsComponent({projects}){
   
   function Project({project}){
     let keywordsJSX = project.keywords.map((keyword,index )=>{
-        return(<span key={keyword + index} class="badge badge-warning p-1 mr-2">{keyword}</span>)
+        return(<span key={keyword + index} className="badge badge-warning p-1 mr-2">{keyword}</span>)
     })
     return(
         <NavLink project={project} exact to={
@@ -47,11 +47,11 @@ export default function MyProjectsComponent({projects}){
                 }
                 }>
             <div  className="mb-2">
-                <div class="media">
-                    <div class="media-figure d-none d-sm-block">
+                <div className="media">
+                    <div className="media-figure d-none d-sm-block">
                         <img src={project.mainImage} alt={"image of " + project.title} />
                     </div>
-                    <div class="media-body">
+                    <div className="media-body">
                         <h4 className="media-title"><strong>{project.title}</strong></h4>
                         <p>{project.shortDescription}</p>
                         <hr/>

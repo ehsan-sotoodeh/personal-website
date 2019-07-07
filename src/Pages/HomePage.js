@@ -48,7 +48,7 @@ class HomePage extends Component {
   render(){
     const blogs = this.props.fetchAllPosts();
     console.log(blogs)
-
+ 
     return(
       <div className="arlo_tm_content" >
         <NavbarComponent />
@@ -57,7 +57,7 @@ class HomePage extends Component {
             <LeftSidebarComponent/>
           </div>
           <div className="arlo_tm_rightpart col-lg-9 col-xl-10 p-lg-0">
-            <div class="rightpart_inner">
+            <div className="rightpart_inner">
               <HomePageComponent />
               <AboutPageComponent />
               <MyProjectsComponent projects={this.props.projects} />

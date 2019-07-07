@@ -7,12 +7,12 @@ import Scrollspy from 'react-scrollspy'
 
 export default function LeftSidebarComponent(){
     return(
-              <div class="arlo_tm_leftpart_wrap d-none d-lg-block">
-              <div class="leftpart_inner">
-                  <div class="logo_wrap">
+              <div className="arlo_tm_leftpart_wrap d-none d-lg-block">
+              <div className="leftpart_inner">
+                  <div className="logo_wrap">
                       <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
                   </div>
-                  <div class="menu_list_wrap text-justify">
+                  <div className="menu_list_wrap text-justify">
                         <Scrollspy items={ ['home', 'about', 'projects', 'education', 'testimonials', 'news'] } offset={-50} currentClassName="is-current">
 
                           <li><AnchorLink  href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink></li>
@@ -23,9 +23,9 @@ export default function LeftSidebarComponent(){
                           <li><AnchorLink  href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink></li>
                         </Scrollspy>
                   </div>
-                  <div class="leftpart_bottom">
+                  <div className="leftpart_bottom">
                   </div>
-                  <a class="arlo_tm_resize" href="#"><i class="xcon-angle-left"></i></a>
+                  <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a>
               </div>
           </div>
     )

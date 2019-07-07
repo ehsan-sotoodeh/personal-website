@@ -6,31 +6,31 @@ import Carousel from 'react-bootstrap/Carousel'
 
 export default function TestimonialsPageComponent2(){
     return(
-              <div class="arlo_tm_section" >
-                      <div class="arlo_tm_services_wrap" >
-                          <div class="container testimonialsComponent" id="testimonials">
-                              <div class="arlo_tm_title_holder">
+              <div className="arlo_tm_section" >
+                      <div className="arlo_tm_services_wrap" >
+                          <div className="container testimonialsComponent" id="testimonials">
+                              <div className="arlo_tm_title_holder">
                                   <h3>Testimonials</h3>
                                   <span>What <b>my previous employers</b> are saying</span>
                               </div>
 
         
-		<div class="col-sm-12">
+		<div className="col-sm-12">
 				<Carousel  >
 					<Carousel.Item>
-							<div class="row">
-								<div class="col-12">
-									<div class="media">
-										<div class="media-left d-flex mr-3">
+							<div className="row">
+								<div className="col-12">
+									<div className="media">
+										<div className="media-left d-flex mr-3">
 											<a href="#">
 												<img src="https://www.tutorialrepublic.com/examples/images/clients/6.jpg" alt=""/>
 											</a>
 										</div>
-										<div class="media-body">
-											<div class="testimonial">
+										<div className="media-body">
+											<div className="testimonial">
 												<FontAwesomeIcon className="qouteIcon" icon={faQuoteLeft} />
 												<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-												<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+												<p className="overview"><b>Paula Wilson</b>, Media Analyst</p>
 											</div>
 										</div>
 									</div>
@@ -39,19 +39,19 @@ export default function TestimonialsPageComponent2(){
 							</div>	
 					</Carousel.Item>
 					<Carousel.Item>
-							<div class="row">
-								<div class="col-12">
-									<div class="media">
-										<div class="media-left d-flex mr-3">
+							<div className="row">
+								<div className="col-12">
+									<div className="media">
+										<div className="media-left d-flex mr-3">
 											<a href="#">
 												<img src="https://www.tutorialrepublic.com/examples/images/clients/6.jpg" alt=""/>
 											</a>
 										</div>
-										<div class="media-body">
-											<div class="testimonial">
+										<div className="media-body">
+											<div className="testimonial">
 												<FontAwesomeIcon className="qouteIcon" icon={faQuoteLeft} />
 												<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-												<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+												<p className="overview"><b>Paula Wilson</b>, Media Analyst</p>
 											</div>
 										</div>
 									</div>
@@ -60,19 +60,19 @@ export default function TestimonialsPageComponent2(){
 							</div>	
 					</Carousel.Item>
 					<Carousel.Item>
-							<div class="row">
-								<div class="col-12">
-									<div class="media">
-										<div class="media-left d-flex mr-3">
+							<div className="row">
+								<div className="col-12">
+									<div className="media">
+										<div className="media-left d-flex mr-3">
 											<a href="#">
 												<img src="https://www.tutorialrepublic.com/examples/images/clients/6.jpg" alt=""/>
 											</a>
 										</div>
-										<div class="media-body">
-											<div class="testimonial">
+										<div className="media-body">
+											<div className="testimonial">
 												<FontAwesomeIcon className="qouteIcon" icon={faQuoteLeft} />
 												<p>Lorem ipsum dolor sit amet, consec adipiscing elit. Nam eusem scelerisque tempor, varius quam luctus dui. Mauris magna metus nec.</p>
-												<p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+												<p className="overview"><b>Paula Wilson</b>, Media Analyst</p>
 											</div>
 										</div>
 									</div>

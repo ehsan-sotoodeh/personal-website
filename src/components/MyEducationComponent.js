@@ -6,20 +6,20 @@ import { faAward,faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
 export default function MyEducationComponent(){
     return(
-              <div class="MyEducationComponent arlo_tm_section" id="education">
-                      <div class="arlo_tm_services_wrap">
-                          <div class="container">
-                              <div class="arlo_tm_title_holder">
+              <div className="MyEducationComponent arlo_tm_section" id="education">
+                      <div className="arlo_tm_services_wrap">
+                          <div className="container">
+                              <div className="arlo_tm_title_holder">
                                   <h3>Education</h3>
                                   <span></span>
                               </div>
 
                                     <div className="card mb-3 col-12 border-0">
-                                            <article class="media">
-                                                <div class="media-figure text-center">
+                                            <article className="media">
+                                                <div className="media-figure text-center">
                                                     <FontAwesomeIcon className="educationIcon" icon={faGraduationCap} />
                                                 </div>
-                                                <div class="media-body">
+                                                <div className="media-body">
                                                     <h4 className="media-title"><strong>Computer Science / Human-Computer Interaction</strong></h4>
                                                     <ul className="mx-5">
                                                         <li>
@@ -39,11 +39,11 @@ export default function MyEducationComponent(){
                                     </div>
 
                                     <div className="card mb-3 col-12 border-0">
-                                            <article class="media">
-                                                <div class="media-figure text-center">
+                                            <article className="media">
+                                                <div className="media-figure text-center">
                                                     <FontAwesomeIcon className="educationIcon" icon={faGraduationCap} />
                                                 </div>
-                                                <div class="media-body">
+                                                <div className="media-body">
                                                     <h4 className="media-title"><strong>Information Technology / Web-based programming</strong></h4>
                                                     <ul className="mx-5">
                                                         <li>
@@ -63,11 +63,11 @@ export default function MyEducationComponent(){
                                     </div>               
 
                                     <div className="card mb-3 col-12 border-0">
-                                            <article class="media">
-                                                <div class="media-figure text-center ">
+                                            <article className="media">
+                                                <div className="media-figure text-center ">
                                                     <FontAwesomeIcon className="educationIcon" icon={faAward} />
                                                 </div>
-                                                <div class="media-body">
+                                                <div className="media-body">
                                                     <h4 className="media-title"><strong>SENIOR WEB DESIGN SPECIALIST</strong></h4>
                                                     <ul className="mx-5">
                                                         <li>

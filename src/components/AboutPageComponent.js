@@ -5,22 +5,22 @@ import { faFileCode,faAt } from '@fortawesome/free-solid-svg-icons'
 
 export default function AboutPageComponent(){
     return(
-      <div class="arlo_tm_section relative aboutComponent" id="about">
-      <div class="arlo_tm_about_wrapper_all">
-        <div class="container">
-          <div class="arlo_tm_title_holder">
+      <div className="arlo_tm_section relative aboutComponent" id="about">
+      <div className="arlo_tm_about_wrapper_all">
+        <div className="container">
+          <div className="arlo_tm_title_holder">
             <h3>About Me</h3>
             <span>Main informations about me</span>
           </div>
-          <div class="arlo_tm_about_wrap">
-            <div class="author_wrap">
+          <div className="arlo_tm_about_wrap">
+            <div className="author_wrap">
   
-              <div class="rightbox text-justify">
-                <div class="arlo_tm_mini_title_holder">
+              <div className="rightbox text-justify">
+                <div className="arlo_tm_mini_title_holder">
                   <h3>Hi, I'm Ehsan Sotoodeh</h3>
                   </div><br/><br/>
-                <div class="definition">
-                  <p>
+                <div className="definition">
+                  <div>
                       I have a master's dgree in Computer Science and a bachlor's degree in IT (Web-based programming);
                        also, I have more than +4 years of experience as a <strong>Full-Stack Developer </strong>
                          working with :
@@ -36,14 +36,14 @@ export default function AboutPageComponent(){
                           </li>
   
                         </ul>
-                   </p>
+                   </div>
                    
                   
                   
 
 
                 </div>
-                <div class="about_short_contact_wrap">
+                <div className="about_short_contact_wrap">
                   <ul>
                     <li>
                       <span><label>City:</label> Vancouver, Canada</span>
@@ -59,20 +59,20 @@ export default function AboutPageComponent(){
                     </li>
                   </ul>
                 </div>
-                <div class="buttons_wrap ">
-                    <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" class="button linkedin">
+                <div className="buttons_wrap ">
+                    <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" className="button linkedin">
                       <span className="ml-2" > <FontAwesomeIcon icon={faLinkedin} /></span>
                       <p className="text-light" >Linkedin</p>
                     </a>
-                    <a href="https://github.com/ehsan-sotoodeh" target="_blank" class="button github">
+                    <a href="https://github.com/ehsan-sotoodeh" target="_blank" className="button github">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faGithubSquare} /></span>
                       <p className="text-light" >Github</p>
                     </a>
-                    <a href="#" target="_blank" class="button stackexchange">
+                    <a href="#" target="_blank" className="button stackexchange">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faFileCode} /></span>
                       <p className="text-light" >Resume</p>
                     </a>
-                    <a href="mailto:ehsan.sotoodeh@usask.ca" target="_blank" class="button twitter">
+                    <a href="mailto:ehsan.sotoodeh@usask.ca" target="_blank" className="button twitter">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faAt} /></span>
                       <p className="text-light" >Email</p>
                     </a>
