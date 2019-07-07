@@ -32,7 +32,7 @@ export const blog = (state = initialState,action)=>{
 
     switch(action.type){
         case C.BLOG.FETCH_ALL_BLOG_POSTS :
-            return state = {...state,...action.payload};
+            return state = [...state,...action.payload];
 
         case C.BLOG.FETCH_BY_ID :
             return [...state,action.payload];

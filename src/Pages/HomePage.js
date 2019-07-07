@@ -46,9 +46,6 @@ class HomePage extends Component {
 
 
   render(){
-    console.log(this.props)
-    //const blogs = 
-    console.log(this.props.projects)
  
     return(
       <div className="arlo_tm_content" >
@@ -64,7 +61,7 @@ class HomePage extends Component {
               <MyProjectsComponent projects={this.props.projects} />
               <MyEducationComponent />  
               <TestimonialsPageComponent />
-              <NewsPageComponent />
+              <NewsPageComponent posts={this.props.blog} />
               <FooterComponent />
 
               
