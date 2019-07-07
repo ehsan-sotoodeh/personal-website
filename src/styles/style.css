@@ -2575,6 +2575,10 @@ img.svg{
 	line-height: 1.5rem;
 }
 
+.noBullet{
+	list-style-type: none;
+}
+
 .aboutComponent .button {
 
 	display: inline-block;
