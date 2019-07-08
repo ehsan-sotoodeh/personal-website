@@ -11,7 +11,6 @@ class BlogService  {
         this.apiKey = process.env.REACT_APP_BLOGGER_API_KEY;
         this.blogID = process.env.REACT_APP_BLOG_ID;
         this.serverAddress = process.env.REACT_APP_SERVER_ADDRESS;
-        console.error(":",process.env)
     }
      
     async fetchAllPosts(maxResults) {
