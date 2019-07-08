@@ -3,8 +3,6 @@ import {combineReducers} from 'redux'
 import initialState from './initialState.json'
 
 export const projects = (state = initialState,action)=>{
-    console.log(action.type)
-
     switch(action.type){
         case C.PROJECTS.FETCH_ALL :
             return state = {...state,projects:[...action.payload]};
@@ -28,16 +26,12 @@ export const testimonials = (state = initialState,action)=>{
     }
 }
 export const blog = (state = initialState,action)=>{
-    console.log(action.type)
-
     switch(action.type){
         case C.BLOG.FETCH_ALL_BLOG_POSTS :
-            console.log(action.payload)
             return state = [...state,...action.payload];
 
         case C.BLOG.FETCH_POST_BY_ID :
-                console.log(action.payload)
-                return state = [...state,action.payload];
+            return state = [...state,action.payload];
         default:
             return state;
     }
