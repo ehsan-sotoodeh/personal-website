@@ -16,7 +16,7 @@ class BlogService  {
     async fetchAllPosts(maxResults) {
 
         try {
-            const url = `${this.serverAddress}blogs/${this.blogID}/posts/?key=${this.apiKey}`;
+            const url = `${this.serverAddress}blogs/${this.blogID}/posts/?maxResults=${maxResults}&key=${this.apiKey}`;
             
             let result = await axios.get(url);
             if(result.status !== 200){

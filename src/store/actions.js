@@ -29,10 +29,10 @@ export const fetchOneProjectById = (projectId) => async (dispatch , getState) =>
     }
 }
 
-export const fetchAllPosts = () => async (dispatch , getState) =>{
+export const fetchAllPosts = (maxResults) => async (dispatch , getState) =>{
 
     try{
-       let posts = await BlogService.fetchAllPosts(3);
+       let posts = await BlogService.fetchAllPosts(maxResults);
         dispatch({
             type: C.BLOG.FETCH_ALL_BLOG_POSTS,
             payload: posts

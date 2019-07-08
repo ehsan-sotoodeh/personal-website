@@ -30,8 +30,8 @@ const mapDispatchToProps = dispatch => {
           fetchAllProjects(){
           dispatch(fetchAllProjects())
         },
-        fetchAllPosts(){
-          dispatch(fetchAllPosts())
+        fetchAllPosts(maxResults){
+          dispatch(fetchAllPosts(maxResults))
         }
   }
 }
@@ -40,7 +40,7 @@ const mapDispatchToProps = dispatch => {
 class HomePage extends Component {
 
   componentDidMount() {
-    this.props.fetchAllPosts();
+    this.props.fetchAllPosts(3);
   }
 
 

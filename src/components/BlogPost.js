@@ -22,6 +22,9 @@ export default function BlogPost({post}){
       if(readmoreIndex === -1)
           return obj;
     });
+
+    const image = parsedHtml[0];
+    contentSummary.shift();
     
     console.log(post.id)
     
@@ -30,10 +33,9 @@ export default function BlogPost({post}){
           <NavLink  to={"/blog/"+post.id} >
             <div className="inner_list">
               <div className="m-4">
-      
-                  <div >
-                      <h3 className="fontsize12 mb-3 lineHeight15" >{post.title}</h3>
-                  </div>
+                  {image}
+                  <hr/>
+                  <h3 className="fontsize11 text-justify  lineHeight15 text-dark" >{post.title}</h3>
                   <div className="definition text-justify">
                     <p>{contentSummary}</p>
                     <p className="text-left fontsize08 font-weight-bold" >{new Date(post.published).toDateString()} / {post.author.displayName}</p>

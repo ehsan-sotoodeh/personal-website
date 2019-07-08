@@ -14,8 +14,8 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = dispatch => {
   return{
-    fetchAllPosts(){
-      dispatch(fetchAllPosts())
+    fetchAllPosts(maxResults){
+      dispatch(fetchAllPosts(maxResults))
     }
   }
 
@@ -27,7 +27,7 @@ class BlogPage extends Component {
       }
 
     componentDidMount() {
-        this.props.fetchAllPosts();
+        this.props.fetchAllPosts(15);
 
     } 
 
