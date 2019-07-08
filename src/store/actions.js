@@ -45,6 +45,22 @@ export const fetchAllPosts = () => async (dispatch , getState) =>{
     }
 }
 
+export const fetchPostById = (postId) => async (dispatch , getState) =>{
+
+    try{
+       let posts = await BlogService.fetchPostById(postId);
+        console.log(posts)
+        dispatch({
+            type: C.BLOG.FETCH_POST_BY_ID,
+            payload: posts
+        });
+    }catch(error){
+        console.log(error)
+        return new Error(error)
+
+    }
+}
+
 
 
 

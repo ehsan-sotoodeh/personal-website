@@ -30,12 +30,19 @@ class BlogService  {
         } 
     }
 
-    async fetchOneSnippetById(snippetId) {
+    async fetchPostById(postId) {
         try {
-            const url = `${this.serverURL}/snippets/id/${snippetId}`;
+            const url = `${this.serverAddress}blogs/${this.blogID}/posts/${postId}/?key=${this.apiKey}`;
 
-            let snippet = await axios.get(url);
-            return snippet.data
+            let result = await axios.get(url);
+            console.log(result)
+            if(result.status !== 200){
+                throw Error(result.status)
+            }
+
+            let post = result.data
+            return post;
+
         } catch (error) {
             console.log(error)
         }
@@ -44,17 +51,6 @@ class BlogService  {
 
 
 }
-
-const urlfy = obj => Object
-    .keys(obj)
-    .map(k => encodeURIComponent(k) + '=' + encodeURIComponent(obj[k]))
-    .join('&');
-
-
-String.prototype.replaceAll = function(search, replacement) {
-    var target = this;
-    return target.split(search).join(replacement);
-};
 
 const _BlogService = new BlogService();
 export { _BlogService as BlogService };

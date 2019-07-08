@@ -46,7 +46,7 @@ class HomePage extends Component {
 
 
   render(){
- 
+    console.log(this.state)
     return(
       <div className="arlo_tm_content" >
         <NavbarComponent />
