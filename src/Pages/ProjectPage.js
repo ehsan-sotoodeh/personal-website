@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import {connect } from 'react-redux'
 import FooterComponent from '../components/FooterComponent'
 import NavbarComponent from '../components/NavbarComponent'
-import ProjectPageLeftSidebarComponent from '../components/ProjectPageLeftSidebarComponent'
+import BlogPageNavbarComponent from '../components/BlogPageNavbarComponent'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode,faEye} from '@fortawesome/free-solid-svg-icons'
+
 
 
 const mapStateToProps = (state) =>{
@@ -36,20 +39,31 @@ class ProjectPage extends Component {
         })[0];
 
         let keywordsJSX = project.keywords.map((keyword,index )=>{
-            return(<span key={keyword + index} class="badge badge-success fontsize09 p-1 mr-2">{keyword}</span>)
+            return(<span key={keyword + index} className="badge badge-success fontsize09 p-1 mr-2">{keyword}</span>)
         })
         return(
 
       <div className="arlo_tm_content" >
-        <NavbarComponent />
+        <BlogPageNavbarComponent />
         <div className="row">
-          <div  className="primaryColor col-lg-3  col-xl-2 p-lg-0"  >
+          {/* <div  className="primaryColor col-lg-3  col-xl-2 p-lg-0"  >
             <ProjectPageLeftSidebarComponent preview={project.preview} source={project.source} />
-          </div>
-          <div className="arlo_tm_rightpart col-lg-9 col-xl-10 p-lg-0">
-            <div class="rightpart_inner h-100">
-           
-            <div className="text-justify m-5">
+          </div> */}
+          <div className="arlo_tm_rightpart container col-12 p-5">
+            <div className="rightpart_inner h-100">
+                <ul className="text-left mt-4 noBullet">
+                  <li>
+                    <a className="btn pl-0  text-left" href={project.preview}><FontAwesomeIcon className="mr-3" icon={faEye} />Project Preview</a>
+                  </li>
+                  <li>
+                    <a className="btn  pl-0 text-left" href={project.source}><FontAwesomeIcon className="mr-3" icon={faCode} />Source Code</a>
+
+                  </li>
+
+                </ul>
+
+
+            <div className="text-justify mt-3 ">
                 <h1 className="fontsize17" >{project.title}</h1> 
                 <br/>
                 <div >{keywordsJSX}</div> 

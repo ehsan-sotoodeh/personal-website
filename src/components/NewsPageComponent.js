@@ -2,7 +2,6 @@ import React, { Component }  from 'react';
 import BlogPost from './BlogPost'
 
 export default function NewsPageComponent({posts}){
-  console.log(posts)
   if(posts.length === 0){
     return (
         <p>

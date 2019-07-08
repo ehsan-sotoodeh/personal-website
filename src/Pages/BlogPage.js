@@ -59,7 +59,7 @@ class BlogPage extends Component {
         <BlogPageNavbarComponent />
         <div className="row">
           <div className="arlo_tm_rightpart col-12 p-5">
-            <div class="rightpart_inner noBullet  h-100 p-5 d-flex">
+            <div className="rightpart_inner noBullet  h-100 p-5 d-flex">
               {postsJSX}                      
             </div>
           </div>

@@ -47,7 +47,7 @@ export default function MyProjectsComponent({projects}){
                 }
                 }>
             <div  className="mb-2">
-                <div className="media">
+                <div className="media text-dark">
                     <div className="media-figure d-none d-sm-block">
                         <img src={project.mainImage} alt={"image of " + project.title} />
                     </div>

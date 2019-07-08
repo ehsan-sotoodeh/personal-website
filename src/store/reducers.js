@@ -14,7 +14,6 @@ export const projects = (state = initialState,action)=>{
     }
 }
 export const testimonials = (state = initialState,action)=>{
-    let newState = []
     switch(action.type){
         case C.TESTIMONIALS.FETCH_ALL :
             return state = [...action.payload];
