@@ -5,8 +5,11 @@
             "title":"Global Institute for Water Security",
             "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies leo integer malesuada nunc vel. Id cursus metus aliquam eleifend mi. Lobortis feugiat vivamus at augue. Posuere lorem ipsum dolor sit amet. Pellentesque habitant morbi tristique senectus et netus et. Facilisi morbi tempus iaculis urna. Aliquet nec ullamcorper sit amet risus nullam. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Quisque id diam vel quam. Lobortis scelerisque fermentum dui faucibus in. Urna et pharetra pharetra massa massa ultricies. Ultrices sagittis orci a scelerisque purus semper eget duis at. Neque volutpat ac tincidunt vitae semper quis. Sed egestas egestas fringilla phasellus faucibus scelerisque. Amet commodo nulla facilisi nullam. Nec feugiat nisl pretium fusce id velit ut tortor pretium. Ac felis donec et odio. Blandit massa enim nec dui. Laoreet sit amet cursus sit amet dictum. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Justo nec ultrices dui sapien eget mi. Varius sit amet mattis vulputate enim nulla. Nisi quis eleifend quam adipiscing vitae proin sagittis. Purus sit amet volutpat consequat mauris nunc congue. Aliquet risus feugiat in ante metus dictum at tempor commodo. Pharetra magna ac placerat vestibulum. A arcu cursus vitae congue mauris rhoncus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Viverra justo nec ultrices dui sapien eget mi proin sed.",
             "keywords":["Python","Express","JQuery" ],
-            "shortDescription":"idunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat",
+            "shortDescription":"As a full-stack developer, designing and developing an interactive
+                             visualization tool to enable researchers to view, visualize, explore and compare
+                              different type of geo-based data on the world’s map.",
             "mainImage" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg",
+
             "source" : "https://github.com/ehsan-sotoodeh/personal-website",
             "preview" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg"
         },
