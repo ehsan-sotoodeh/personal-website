@@ -5,6 +5,7 @@ import NavbarComponent from '../components/NavbarComponent'
 import BlogPageNavbarComponent from '../components/BlogPageNavbarComponent'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode,faEye} from '@fortawesome/free-solid-svg-icons'
+import { Markup } from 'interweave';
 
 
 
@@ -53,10 +54,10 @@ class ProjectPage extends Component {
             <div className="rightpart_inner h-100">
                 <ul className="text-left mt-4 noBullet">
                   <li>
-                    <a className="btn pl-0  text-left" href={project.preview}><FontAwesomeIcon className="mr-3" icon={faEye} />Project Preview</a>
+                    <a className={"btn  pl-0 text-left " + ((project.source.length > 0)?" ":" disabled")} href={project.preview}><FontAwesomeIcon className="mr-3" icon={faEye} />Project Preview</a>
                   </li>
                   <li>
-                    <a className="btn  pl-0 text-left" href={project.source}><FontAwesomeIcon className="mr-3" icon={faCode} />Source Code</a>
+                    <a className={"btn  pl-0 text-left " + ((project.source.length > 0)?" ":" disabled")} href={project.source}><FontAwesomeIcon className="mr-3" icon={faCode} />Source Code</a>
 
                   </li>
 
@@ -68,16 +69,16 @@ class ProjectPage extends Component {
                 <br/>
                 <div >{keywordsJSX}</div> 
                 <br/>
-                <h3 className="fontsize10 lineHeight15" >{project.content}</h3> 
+                <h3 className="fontsize10 lineHeight15" ><Markup allowElements={true} content={project.content} /> </h3> 
                 
             </div>
             
-            <FooterComponent />
 
             
           
             </div>
           </div>
+            <FooterComponent />
         
 
         </div>

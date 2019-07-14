@@ -3,22 +3,37 @@
         {
             "id":1,
             "title":"Global Institute for Water Security",
-            "content":"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ultricies leo integer malesuada nunc vel. Id cursus metus aliquam eleifend mi. Lobortis feugiat vivamus at augue. Posuere lorem ipsum dolor sit amet. Pellentesque habitant morbi tristique senectus et netus et. Facilisi morbi tempus iaculis urna. Aliquet nec ullamcorper sit amet risus nullam. Massa ultricies mi quis hendrerit dolor magna eget est lorem. Quisque id diam vel quam. Lobortis scelerisque fermentum dui faucibus in. Urna et pharetra pharetra massa massa ultricies. Ultrices sagittis orci a scelerisque purus semper eget duis at. Neque volutpat ac tincidunt vitae semper quis. Sed egestas egestas fringilla phasellus faucibus scelerisque. Amet commodo nulla facilisi nullam. Nec feugiat nisl pretium fusce id velit ut tortor pretium. Ac felis donec et odio. Blandit massa enim nec dui. Laoreet sit amet cursus sit amet dictum. Vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae. Justo nec ultrices dui sapien eget mi. Varius sit amet mattis vulputate enim nulla. Nisi quis eleifend quam adipiscing vitae proin sagittis. Purus sit amet volutpat consequat mauris nunc congue. Aliquet risus feugiat in ante metus dictum at tempor commodo. Pharetra magna ac placerat vestibulum. A arcu cursus vitae congue mauris rhoncus. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Ante metus dictum at tempor commodo ullamcorper a lacus vestibulum. Viverra justo nec ultrices dui sapien eget mi proin sed.",
-            "keywords":["Python","Express","JQuery" ],
-            "shortDescription":"As a full-stack developer, designing and developing an interactive visualization tool to enable researchers to view, visualize, explore and compare different type of geo-based data on the world’s map.",
-            "mainImage" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg",
-            "source" : "https://github.com/ehsan-sotoodeh/personal-website",
-            "preview" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg"
+            "content":"<br /></b> <b>What is the project:</b><br /> Designing and developing an interactive visualization tool to enable researchers to view, visualize, explore and compare different type of geo-based data on the world’s map.<br /><br /> <b>What are my responsibilities:</b><br />As a full-stack developer, I used python to process data in backend and different JavaScript libraries to visualized those data in front-end using heatmaps, charts, and graphs to convey insight to stakeholders and provide input for decision support tools.<br />Technologies, libraries and languages: Python (matplotlib) Js(node, express, highCharts, leaflet, Google maps, jQuery) ,&nbsp; MySQL, HTML, CSS,&nbsp; RESTful API<br /><br /><b>Who is the employer:</b><br />Global Institute for Water Security (GIWS)<br /><br /><b>What are the features of the project?</b><br /><br /><ul><li>Visualization of NetCDF and shape files as the most widely used data type of GIS systems.</li><li>Deep search in time, where users can explore the time series of a specific variable in time for a given point on the map.</li><li>Comparison of two or more spatial points for a product.</li><li>Pop-up panels that can be used to compare various products visually next to each other for a given spatial domain.</li><li>Clear separation of front-end and back-end, which enables using features of visualization without the need for background knowledge in computer sciences&nbsp;</li></ul><br/><br/><br/>",
+            "keywords":["Python","Express","Node","ES6", "RESTful API" , "highCharts", "leaflet"," Google maps", "jQuery" ,  "MySQL", "HTML", "CSS"  ],
+            "shortDescription":"Developing interactive visualization tools for hydrological models and weather-related data: This involved presenting large amounts of information, including the results of hydrological models, on a map of Canada in a universally understandable and easy to interpret fashion. In my visualizations, I took advantage of different representational tools such as heatmaps, charts, and graphs to convey insight to stakeholders and provide input for decision support tools.",
+            "mainImage" : "http://sotoodeh.pro/a-resources/giws-proj-thumb.jpg",
+            "source" : "",
+            "preview" : "http://gwf-demo.usask.ca"
         },
         {
             "id":2,
-            "title":"Project 2 title",
-            "content":"Project 2 content",
-            "keywords":["22","2222","222222"],
-            "shortDescription":"Project 2 short description ",
-            "mainImage" : "https://s3-us-west-2.amazonaws.com/s.cdpn.io/30256/1690.jpg"
+            "title":"Poopesh : Mobile e-commerce application builder",
+            "content":"<b>What is the project:</b><br /><b>Mobile e-commerce&nbsp;application builder :</b>Mobile usage has been on the rise for a while and it has already surpassed the desktop in terms of internet usage. With this trend in mind, we designed a fully customizable Android application that connects to our web-based e-commerce solution and enables our clients to sell their products and services on the mobile ecosystem.<br /> <br />The outstanding advantage of this application compares the applications like Amazon or e-bay is that it is customizable based on our clients’ needs and their brand's requirements, which provide a sense of uniqueness and increases their brand loyalty.<br /><br />Given the popularity of Poopesh as a web-based store, our mobile application soon tuned out a major success (+80% of Poopesh’s new clients select the package with mobile application).<br /><br /><b>What were my responsibilities:&nbsp;</b><br /> As an Android developer and Full-Stack developer, I was in charge of the implementation of their Android application and its web-based control panel (from ideation to lunch).<br /><br /><b>Technologies, libraries and languages:</b><br />Java, PHP, MySQL, HTML, CSS, JS, RESTful API, jQuery<br /><br /><b>Who is the employer:</b><br />&nbsp;Pars Dream Road<br /><br /><b>How Poopesh Android application works:&nbsp;</b><br /><br /><br /><iframe width=\"853\" height=\"480\" src=\"https://www.youtube.com/embed/Vqg2tNMv2b8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br /><br />",
+            "keywords":["Java", "PHP", "MySQL", "HTML", "CSS", "JS", "RESTful API", "jQuery" ],
+            "shortDescription":"Poopesh Application builder is a service that generate customizable mobile-based android applications that are connect to Poopesh e-commerce service and enable clients to sell their products and services online. ",
+            "mainImage" : "http://sotoodeh.pro/a-resources/poopesh%20Android.webp",
+            "source" : "",
+            "preview" : ""
+        },
+        {
+            "id":3,
+            "title":"Poopesh : Drag and Drop website builder",
+            "content":"<br /><b>What is the project:</b><br />Poopesh.com is a Drag and Drop website and online store builder designed to help business owners to sell their products and services online and create their online presence. Poopesh is well adjusted to local business and their customers’ needs and requirements.<br /><br />With Poopesh business owners do not need any programming skill or technical knowledge to build their website or e-commerce point of sale. link. Poopesh is currently providing service to more than 1500 online websites and stores.<br /><br /><b>What were my responsibilities?</b><br /> As Full-Stack Web Developer, I was in charge of adding new features to their web-based drag and drop website and online store builder.<br />Technologies, libraries and languages:&nbsp; PHP, MySQL, HTML,CSS, JS, RESTful API , jQuery, jQuery UI,<br /><br /><b>Who was the employer?</b><br />Pars Dream Road<br /><br /><b>How Poopesh works :</b><br /><br /><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Vm9KyemENVo\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br/><br/><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sTwwIuMb-kk\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br/><br/><iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/odwV27wDxCw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><br/><br/><b>some of the websites designed using poopesh.</b><br />http://skin.poopesh.com/?demo=151<br />http://skin.poopesh.com/?demo=171<br />http://mvmkomak.com/<br />https://irangiah.ir/<br /> https://zarsee.com/<br />http://baristacenter.ir/<br />http://cgbox.ir/<br /><br />to find more websites please visit :<br /> https://poopesh.com/page/customers<br /> <br /><br /><br />",
+            "keywords":["PHP", "MySQL", "HTML","CSS", "JS", "RESTful API" , "jQuery", "jQuery UI"],
+            "shortDescription":"Poopesh is a Drag and Drop website and online store builder which allow business owners to start their online presence and sell their products and services on the internet without any technical knowledge. ",
+            "mainImage" : "http://sotoodeh.pro/a-resources/poopesh%20site%20builder%20thumb1.webp",
+            "source" : "",
+            "preview" : ""
 
         }
+
+
+
     ],
     "testimonials":[
         {
