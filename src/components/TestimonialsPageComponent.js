@@ -1,5 +1,4 @@
-import React, { Component }  from 'react';
-import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
+import React  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 import Carousel from 'react-bootstrap/Carousel'

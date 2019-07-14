@@ -1,5 +1,3 @@
-import C from '../store/constants'
-
 import {} from 'dotenv/config'
 const axios = require('axios');
 axios.defaults.withCredentials = true

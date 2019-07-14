@@ -1,10 +1,6 @@
 import React,{Component} from 'react';
 import {connect } from 'react-redux'
-
 import {fetchAllPosts } from '../store/actions'
-
-
-
 import FooterComponent from '../components/FooterComponent'
 import NavbarComponent from '../components/NavbarComponent'
 import HomePageComponent from '../components/HomePageComponent'
@@ -13,7 +9,6 @@ import AboutPageComponent from '../components/AboutPageComponent'
 import MyProjectsComponent from '../components/MyProjectsComponent'
 import LeftSidebarComponent from '../components/LeftSidebarComponent'
 import MyEducationComponent from '../components/MyEducationComponent'
-import TestimonialsPageComponent from '../components/TestimonialsPageComponent'
 
 
 

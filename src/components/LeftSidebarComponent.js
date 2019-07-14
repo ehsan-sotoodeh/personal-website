@@ -1,6 +1,6 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenNib,faCode,faUserTie,faHome,faGraduationCap,faQuoteLeft} from '@fortawesome/free-solid-svg-icons'
+import { faPenNib,faCode,faUserTie,faHome,faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
 
@@ -10,7 +10,7 @@ export default function LeftSidebarComponent(){
               <div className="arlo_tm_leftpart_wrap d-none d-lg-block">
               <div className="leftpart_inner">
                   <div className="logo_wrap">
-                      <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
+                      {/* <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a> */}
                   </div>
                   <div className="menu_list_wrap text-justify">
                         <Scrollspy items={ ['home', 'about', 'projects', 'education', 'blogSection'] } offset={-50} currentClassName="is-current">
@@ -25,7 +25,7 @@ export default function LeftSidebarComponent(){
                   </div>
                   <div className="leftpart_bottom">
                   </div>
-                  <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a>
+                  {/* <a className="arlo_tm_resize" href="#"><i className="xcon-angle-left"></i></a> */}
               </div>
           </div>
     )

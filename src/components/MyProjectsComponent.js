@@ -1,5 +1,4 @@
-import React, { Component }  from 'react';
-import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
+import React  from 'react';
 import { NavLink } from "react-router-dom";
 
 
@@ -48,7 +47,7 @@ export default function MyProjectsComponent({projects}){
             <div  className="mb-2">
                 <div className="media text-dark">
                     <div className="media-figure d-none d-sm-block">
-                        <img class="fluid" src={project.mainImage} alt={"image of " + project.title} />
+                        <img className="fluid" src={project.mainImage} alt={"image of " + project.title} />
                     </div>
                     <div className="media-body">
                         <h4 className="media-title"><strong>{project.title}</strong></h4>

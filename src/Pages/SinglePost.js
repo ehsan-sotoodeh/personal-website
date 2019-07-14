@@ -3,7 +3,6 @@ import {connect } from 'react-redux'
 import FooterComponent from '../components/FooterComponent'
 import BlogPageNavbarComponent from '../components/BlogPageNavbarComponent'
 import {fetchPostById } from '../store/actions'
-import BlogPost from '../components/BlogPost'
 import ReactHtmlParser from 'react-html-parser';
 
 const mapStateToProps = (state) =>{
@@ -42,6 +41,8 @@ class SinglePost extends Component {
       if(!this.post){
         this.props.fetchPostById(this.postId);
       }
+      document.getElementById('root').scrollIntoView({ behavior: "smooth" });
+
 
     } 
 
@@ -63,8 +64,6 @@ class SinglePost extends Component {
         )
       }
     
-      console.log(post)
-
       const parsedHtml = ReactHtmlParser(post.content);
       const image = parsedHtml[0];
       const title = post.title;

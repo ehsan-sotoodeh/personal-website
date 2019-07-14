@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import Typed from 'react-typed';
 import Particles from 'react-particles-js';
 

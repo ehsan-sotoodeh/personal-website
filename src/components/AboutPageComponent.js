@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedin,faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { faFileCode,faAt } from '@fortawesome/free-solid-svg-icons'
@@ -55,24 +55,24 @@ export default function AboutPageComponent(){
                         <span><label>Mail:</label> <a href="mailto:ehsan.sotoodeh@usask.ca">ehsan.sotoodeh&#64;usask.ca</a></span>
                     </li>
                     <li>
-                      <span><label>Phone:</label> <a href="#">+1 306 914 4814</a></span>
+                      <span><label>Phone:</label><a href="tel:+1-306-914-4814">+1 (306) 914 4814</a> </span>
                     </li>
                   </ul>
                 </div>
                 <div className="buttons_wrap ">
-                    <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" className="button linkedin">
+                    <a href="https://www.linkedin.com/in/ehsan-sotoodeh/" target="_blank" rel="noopener noreferrer" className="button linkedin">
                       <span className="ml-2" > <FontAwesomeIcon icon={faLinkedin} /></span>
                       <p className="text-light" >Linkedin</p>
                     </a>
-                    <a href="https://github.com/ehsan-sotoodeh" target="_blank" className="button github">
+                    <a href="https://github.com/ehsan-sotoodeh" target="_blank" rel="noopener noreferrer" className="button github">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faGithubSquare} /></span>
                       <p className="text-light" >Github</p>
                     </a>
-                    <a href="http://sotoodeh.pro/a-resources/Resume_Ehsan_Sotoodeh.pdf" target="_blank" className="button stackexchange">
+                    <a href="http://sotoodeh.pro/a-resources/Resume_Ehsan_Sotoodeh.pdf" target="_blank" rel="noopener noreferrer" className="button stackexchange">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faFileCode} /></span>
                       <p className="text-light" >Resume</p>
                     </a>
-                    <a href="mailto:ehsan.sotoodeh@usask.ca" target="_blank" className="button twitter">
+                    <a href="mailto:ehsan.sotoodeh@usask.ca" target="_blank" rel="noopener noreferrer" className="button twitter">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faAt} /></span>
                       <p className="text-light" >Email</p>
                     </a>

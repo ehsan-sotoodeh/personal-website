@@ -1,4 +1,4 @@
-import React, { Component }  from 'react';
+import React  from 'react';
 import BlogPost from './BlogPost'
 
 export default function NewsPageComponent({posts}){

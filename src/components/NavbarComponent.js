@@ -1,7 +1,7 @@
 import React, { Component }  from 'react';
-import { Navbar,NavDropdown,Nav } from 'react-bootstrap';
+import { Navbar,Nav } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faPenNib,faCode,faUserTie,faHome,faGraduationCap,faQuoteLeft} from '@fortawesome/free-solid-svg-icons'
+import { faPenNib,faCode,faUserTie,faHome,faGraduationCap} from '@fortawesome/free-solid-svg-icons'
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Scrollspy from 'react-scrollspy'
 
