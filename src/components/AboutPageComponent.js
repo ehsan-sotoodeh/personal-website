@@ -17,7 +17,7 @@ export default function AboutPageComponent(){
   
               <div className="rightbox text-justify">
                 <div className="arlo_tm_mini_title_holder">
-                  <h3>Hi, I'm Ehsan Sotoodeh</h3>
+                  <h3>Hi, I'm Ehsan </h3>
                   </div><br/><br/>
                 <div className="definition">
                   <div>

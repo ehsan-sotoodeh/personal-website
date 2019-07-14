@@ -35,7 +35,7 @@ export default function MyProjectsComponent({projects}){
   
   function Project({project}){
     let keywordsJSX = project.keywords.map((keyword,index )=>{
-        return(<span key={keyword + index} className="badge badge-info p-1 mr-2">{keyword}</span>)
+        return(<span key={keyword + index} className="badge badge-info p-1 mr-2 mt-1">{keyword}</span>)
     })
     return(
         <NavLink project={project} exact to={
@@ -44,12 +44,12 @@ export default function MyProjectsComponent({projects}){
                     project:{project}
                 }
                 }>
-            <div  className="mb-2">
+            <div  className="py-2 my-2">
                 <div className="media text-dark">
                     <div className="media-figure d-none d-sm-block">
                         <img className="fluid" src={project.mainImage} alt={"image of " + project.title} />
                     </div>
-                    <div className="media-body">
+                    <div className="media-body py-0">
                         <h4 className="media-title"><strong>{project.title}</strong></h4>
                         <p>{project.shortDescription}</p>
                         <hr/>
