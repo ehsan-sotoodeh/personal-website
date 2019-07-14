@@ -16,7 +16,7 @@ export default function MyEducationComponent(){
 
                                     <div className="card mb-3 col-12 border-0">
                                             <article className="media">
-                                                <div className="media-figure text-center">
+                                                <div className="media-figure text-center  d-none d-md-block">
                                                     <FontAwesomeIcon className="educationIcon" icon={faGraduationCap} />
                                                 </div>
                                                 <div className="media-body">
@@ -40,7 +40,7 @@ export default function MyEducationComponent(){
 
                                     <div className="card mb-3 col-12 border-0">
                                             <article className="media">
-                                                <div className="media-figure text-center">
+                                                <div className="media-figure text-center  d-none d-md-block">
                                                     <FontAwesomeIcon className="educationIcon" icon={faGraduationCap} />
                                                 </div>
                                                 <div className="media-body">
@@ -64,7 +64,7 @@ export default function MyEducationComponent(){
 
                                     <div className="card mb-3 col-12 border-0">
                                             <article className="media">
-                                                <div className="media-figure text-center ">
+                                                <div className="media-figure text-center  d-none d-md-block">
                                                     <FontAwesomeIcon className="educationIcon" icon={faAward} />
                                                 </div>
                                                 <div className="media-body">
