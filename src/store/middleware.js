@@ -11,6 +11,36 @@ const consoleMessages = store => next => action => {
     return results;
 }
 
+
+function saveToLocalStorage(state) {
+    try {
+      const serializedState = JSON.stringify(state)
+      localStorage.setItem('state', serializedState)
+    } catch(e) {
+      console.log(e)
+    }
+  }
+  
+  function loadFromLocalStorage() {
+    try {
+      const serializedState = localStorage.getItem('state')
+      if (serializedState === null) return undefined
+      return JSON.parse(serializedState)
+    } catch(e) {
+      console.log(e)
+      return undefined
+    }
+  }
+
+  const persistedState = loadFromLocalStorage()
+
+
+
+
 export default () =>{
-    return applyMiddleware(thunk,consoleMessages)(createStore)(appReducer,initialState)
+    const appState = (persistedState)? persistedState : initialState;
+    const store = applyMiddleware(thunk,consoleMessages)(createStore)(appReducer,appState);
+    store.subscribe(() => saveToLocalStorage(store.getState()))
+
+    return store;
 }
