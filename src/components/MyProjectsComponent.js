@@ -4,7 +4,6 @@ import { NavLink } from "react-router-dom";
 
 
 export default function MyProjectsComponent({projects}){
-
     if(projects.length === 0){
         return (
             <p>

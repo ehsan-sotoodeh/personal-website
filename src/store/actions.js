@@ -2,26 +2,13 @@ import C from './constants'
 import { BlogService } from '../services/blog.service'
 
 
-export const fetchAllProjects = () => async (dispatch , getState) =>{
 
-    try{
-        dispatch({
-            type: C.PROJECTS.FETCH_ALL,
-            payload: ""
-        });
-    }catch(error){
-        console.log(error)
-        return new Error(error)
-
-    }
-}
 export const fetchOneProjectById = (projectId) => async (dispatch , getState) =>{
-
     try{ 
-
+        let page = await BlogService.fetchPageById(projectId);
         dispatch({
             type: C.PROJECTS.FETCH_BY_ID,
-            payload: projectId
+            payload: page
         });
     }catch(error){
         return new Error(error)

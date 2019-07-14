@@ -1,7 +1,7 @@
 const constants = {
     PROJECTS : {
         FETCH_ALL_PROJECTS : "FETCH_ALL_PROJECTS",
-        FETCH_PROJECT_BY_ID : "FETCH_PROJECT_BY_ID"
+        FETCH_BY_ID : "FETCH_BY_ID"
     },
     TESTIMONIALS : {
         FETCH_ALL : "FETCH_ALL",

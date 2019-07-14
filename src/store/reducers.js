@@ -8,7 +8,14 @@ export const projects = (state = initialState,action)=>{
             return state = {...state,projects:[...action.payload]};
 
         case C.PROJECTS.FETCH_BY_ID :
-            return [...state,action.payload];
+            const page = action.payload;
+            const newState = state.map(project=>{
+                if(project.id === page.id){
+                    project.content = page.content;
+                }
+                return project;
+            })
+            return [...newState];
         default:
             return state;
     }

@@ -13,14 +13,14 @@ export default function LeftSidebarComponent(){
                       <a href="#"><img src="img/logo/desktop-logo.png" alt="" /></a>
                   </div>
                   <div className="menu_list_wrap text-justify">
-                        <Scrollspy items={ ['home', 'about', 'projects', 'education', 'testimonials', 'news'] } offset={-50} currentClassName="is-current">
+                        <Scrollspy items={ ['home', 'about', 'projects', 'education', 'blogSection'] } offset={-50} currentClassName="is-current">
 
                           <li><AnchorLink  href="#home"><FontAwesomeIcon className="mr-3" icon={faHome} />Home</AnchorLink></li>
                           <li><AnchorLink  href="#about"><FontAwesomeIcon className="mr-3" icon={faUserTie} />About Me</AnchorLink></li>
                           <li><AnchorLink  href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink></li>
                           <li><AnchorLink  href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink></li>
-                          <li><AnchorLink  href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink></li>
-                          <li><AnchorLink  href="#news"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink></li>
+                          <li><AnchorLink  href="#blogSection"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink></li>
+                          {/* <li><AnchorLink  href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink></li> */}
                         </Scrollspy>
                   </div>
                   <div className="leftpart_bottom">

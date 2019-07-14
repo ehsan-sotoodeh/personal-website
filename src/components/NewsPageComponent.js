@@ -15,10 +15,10 @@ export default function NewsPageComponent({posts}){
   });
 
     return(
-			<div className="arlo_tm_section">
+			<div className="arlo_tm_section" >
 <div className="arlo_tm_news_wrap">
   <div className="container">
-    <div className="arlo_tm_title_holder news"  id="news">
+    <div className="arlo_tm_title_holder news" id="blogSection" >
       <h3>Blog</h3>
       <span>Where I share what I know...</span>
     </div>
@@ -29,7 +29,7 @@ export default function NewsPageComponent({posts}){
       </ul>
     </div>
   </div>
-  <a className="btn btn-outline-primary" href="/blog">More From Blog....</a>
+  {/* <a className="btn btn-outline-primary" href="/blog">More From Blog....</a> */}
 </div>
 </div>
 

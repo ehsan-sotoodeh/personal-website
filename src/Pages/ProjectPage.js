@@ -6,6 +6,7 @@ import BlogPageNavbarComponent from '../components/BlogPageNavbarComponent'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCode,faEye} from '@fortawesome/free-solid-svg-icons'
 import { Markup } from 'interweave';
+import {fetchOneProjectById } from '../store/actions'
 
 
 
@@ -17,7 +18,9 @@ const mapStateToProps = (state) =>{
 
 const mapDispatchToProps = dispatch => {
     return{
-
+      fetchOneProjectById(projectId){
+        dispatch(fetchOneProjectById(projectId))
+      }
     }
 }
 class ProjectPage extends Component {
@@ -27,7 +30,8 @@ class ProjectPage extends Component {
       }
 
     componentDidMount() {
-       
+      const  projectId = this.props.match.params.projectId;
+      this.props.fetchOneProjectById(projectId)
     }
 
 

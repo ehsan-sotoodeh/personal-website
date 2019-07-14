@@ -68,7 +68,7 @@ export default function AboutPageComponent(){
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faGithubSquare} /></span>
                       <p className="text-light" >Github</p>
                     </a>
-                    <a href="#" target="_blank" className="button stackexchange">
+                    <a href="http://sotoodeh.pro/a-resources/Resume_Ehsan_Sotoodeh.pdf" target="_blank" className="button stackexchange">
                       <span className="ml-2 " ><FontAwesomeIcon className="" icon={faFileCode} /></span>
                       <p className="text-light" >Resume</p>
                     </a>

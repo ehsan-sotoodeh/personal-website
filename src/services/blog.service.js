@@ -48,6 +48,23 @@ class BlogService  {
         }
 
     }
+    async fetchPageById(pageId) {
+        try {
+            const url = `${this.serverAddress}blogs/${this.blogID}/pages/${pageId}/?key=${this.apiKey}`;
+
+            let result = await axios.get(url);
+            if(result.status !== 200){
+                throw Error(result.status)
+            }
+
+            let post = result.data
+            return post;
+
+        } catch (error) {
+            console.log(error)
+        }
+
+    }
 
 
 }
