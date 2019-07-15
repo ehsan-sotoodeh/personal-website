@@ -4,7 +4,7 @@ import {fetchAllPosts } from '../store/actions'
 import FooterComponent from '../components/FooterComponent'
 import NavbarComponent from '../components/NavbarComponent'
 import HomePageComponent from '../components/HomePageComponent'
-import NewsPageComponent from '../components/NewsPageComponent'
+//import NewsPageComponent from '../components/NewsPageComponent'
 import AboutPageComponent from '../components/AboutPageComponent'
 import MyProjectsComponent from '../components/MyProjectsComponent'
 import LeftSidebarComponent from '../components/LeftSidebarComponent'
@@ -52,7 +52,7 @@ class HomePage extends Component {
               <MyProjectsComponent projects={this.props.projects} />
               <MyEducationComponent />  
               {/* <TestimonialsPageComponent /> */}
-              <NewsPageComponent posts={this.props.blog} />
+              {/* <NewsPageComponent posts={this.props.blog} /> */}
               <FooterComponent />
 
               
