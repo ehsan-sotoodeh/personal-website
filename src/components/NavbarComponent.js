@@ -64,7 +64,7 @@ export default class NavbarComponent extends Component{
                     <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#projects"><FontAwesomeIcon className="mr-3" icon={faCode} />PROJECTS</AnchorLink>
                     <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#education"><FontAwesomeIcon className="mr-3" icon={faGraduationCap} />Education</AnchorLink>
                     {/* <AnchorLink  onClick={this.closeNavbar} offset="70" className="list-group-item navbarItem transparent  text-light" href="#testimonials"><FontAwesomeIcon className="mr-3" icon={faQuoteLeft} />Testimonials</AnchorLink> */}
-                    <AnchorLink  onClick={this.closeNavbar} offset="70"  className="list-group-item navbarItem transparent  text-light" href="#blogSection"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink>
+                    {/* <AnchorLink  onClick={this.closeNavbar} offset="70"  className="list-group-item navbarItem transparent  text-light" href="#blogSection"><FontAwesomeIcon className="mr-3" icon={faPenNib} />Blog</AnchorLink> */}
                   </Scrollspy>
 
     
