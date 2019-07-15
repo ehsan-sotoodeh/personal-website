@@ -45,8 +45,8 @@ export default function MyProjectsComponent({projects}){
                 }
                 }>
             <div  className="py-2 my-2">
-                <div className="media text-dark">
-                    <div className="media-figure d-none d-sm-block">
+                <div className="  media text-dark">
+                    <div className="gradient media-figure d-none d-sm-block">
                         <img className="fluid" src={project.mainImage} alt={"image of " + project.title} />
                     </div>
                     <div className="media-body py-0">

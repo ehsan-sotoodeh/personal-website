@@ -2564,6 +2564,11 @@ a.animated-button.thar-three:before {
 	margin-top:5px;
 }
 
+.myProjectsComponent .gradient{
+	background-image: linear-gradient(#ff000000, rgba(0, 123, 255, 0.15), #0000ff00);
+}
+
+/* testimonialsComponent */
 
 .testimonialsComponent .carousel {
 	margin: 50px auto;

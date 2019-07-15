@@ -10,7 +10,19 @@ export default function HomePageComponent(){
                           <div className="arlo_tm_universal_box_wrap particle jarallax" data-speed="0.1">
                               <div id="particles-js"></div> 
                               <div className="particle_overlay">
-                  <Particles />
+                  <Particles     params={{
+                        "particles": {
+                            "number": {
+                                "value": 50
+                            },
+                            "size": {
+                                "value": 2
+                            },
+                            line_linked: {
+      
+            			    }
+                        }
+                    }}/>
                 </div>
                               <div className="inner_content">
                                   <div className="name_holder">
