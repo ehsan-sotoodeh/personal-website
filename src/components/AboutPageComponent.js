@@ -22,7 +22,7 @@ export default function AboutPageComponent(){
                 <div className="definition">
                   <div>
                       I have a master's dgree in Computer Science and a bachlor's degree in IT (Web-based programming);
-                       also, I have more than +4 years of experience as a <strong>Full-Stack Developer </strong>
+                       also, I have more than +3 years of experience as a <strong>Full-Stack Developer </strong>
                          working with :
                         <ul className="m-2">
                           <li>
